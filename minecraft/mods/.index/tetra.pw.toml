@@ -1,0 +1,16 @@
+filename = 'tetra-1.20.1-6.8.0.jar'
+name = 'Tetra'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '3c2ee629afe860d5d91b754fe09e3823ab975744'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6096160
+project-id = 289712

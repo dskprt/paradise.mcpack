@@ -1,0 +1,16 @@
+filename = 'caelum-1.20.1-2.0.0.0.jar'
+name = 'Caelum'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8b1980f2a91599aea95fecd646b8bc265df7786f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4674619
+project-id = 556708

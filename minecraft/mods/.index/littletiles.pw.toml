@@ -1,0 +1,16 @@
+filename = 'LittleTiles_BETA_v1.6.0-pre156_mc1.20.1.jar'
+name = 'LittleTiles'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '8efd5d98b2aafd9ee0c3817609f325f78448f132'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6192027
+project-id = 257818

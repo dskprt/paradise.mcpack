@@ -1,0 +1,16 @@
+filename = 'untamedwilds-1.20.1-4.0.4.jar'
+name = 'Untamed Wilds'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'c156f9e8730c39650fe13c8f612de87529d4abcf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4779746
+project-id = 457252

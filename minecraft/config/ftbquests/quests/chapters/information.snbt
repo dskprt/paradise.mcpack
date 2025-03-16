@@ -1,0 +1,40 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "information"
+	group: ""
+	id: "75655394E505E61E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The Nether is located below the Overworld, i.e. below Y=-64."
+				"Nether portals are disabled, simply dig straight down to get to the Nether"
+			]
+			id: "3B737ECCC84105B8"
+			tasks: [{
+				id: "703FE1E1437A26CF"
+				type: "checkmark"
+			}]
+			title: "The Nether"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Ores need more advanced processing compared to vanilla Minecraft."
+				"Look-up \"Raw Ingot\" recipes in EMI for more information."
+			]
+			id: "65435F60B4140CC5"
+			tasks: [{
+				id: "755A9681B0A7E576"
+				type: "checkmark"
+			}]
+			title: "Ore Processing"
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "Information"
+}

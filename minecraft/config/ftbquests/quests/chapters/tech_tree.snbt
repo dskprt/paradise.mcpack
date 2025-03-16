@@ -1,0 +1,455 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tech_tree"
+	group: ""
+	id: "0742DC3A0BBAE172"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:raw_iron"
+			id: "413BF175E0E521CB"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "26F5F64D0473FA85"
+				type: "dimension"
+			}]
+			title: "Basic Ore Processing"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			icon: "immersiveengineering:manual"
+			id: "1538AC65B85D6871"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "268D5A112DEE1A95"
+				type: "dimension"
+			}]
+			title: "Engineering Basics"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1538AC65B85D6871"]
+			icon: "create:cogwheel"
+			id: "5D6812C858DDC286"
+			rewards: [{
+				auto: "invisible"
+				id: "72E39B4C89090657"
+				ignore_reward_blocking: true
+				stage: "cbasic"
+				team_reward: true
+				title: "World of Create"
+				type: "gamestage"
+			}]
+			tasks: [{
+				icon: "immersiveengineering:alloy_smelter"
+				id: "4846368D08FC483D"
+				observe_type: 0
+				timer: 0L
+				title: "Construct an Alloy Smelter"
+				to_observe: "immersiveengineering:alloy_smelter"
+				type: "observation"
+			}]
+			title: "World of Create"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5D6812C858DDC286"]
+			id: "732D47F2CAB2C43A"
+			tasks: [{
+				consume_items: false
+				id: "4549DDA172E6A5FD"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Precise Manufacturing"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["732D47F2CAB2C43A"]
+			icon: "create_new_age:copper_circuit"
+			id: "6D763FAB92EBF86D"
+			rewards: [{
+				auto: "invisible"
+				id: "141032809BC1CDCA"
+				ignore_reward_blocking: true
+				stage: "circ"
+				team_reward: true
+				title: "Circuit Manufacturing"
+				type: "gamestage"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "1F865CF21B2F78FF"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Circuit Manufacturing"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["732D47F2CAB2C43A"]
+			icon: "immersiveengineering:heavy_engineering"
+			id: "151A93F9441BB58F"
+			rewards: [{
+				auto: "invisible"
+				id: "4F4BB8FA9A4F3CD5"
+				ignore_reward_blocking: true
+				stage: "iadv"
+				team_reward: true
+				title: "Advanced Engineering"
+				type: "gamestage"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "267AEA4F200CDD00"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Advanced Engineering"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D763FAB92EBF86D"]
+			icon: "computercraft:computer_normal"
+			id: "5D265609C25DF806"
+			rewards: [{
+				auto: "invisible"
+				id: "63B61362CF34CC6F"
+				ignore_reward_blocking: true
+				stage: "cc"
+				team_reward: true
+				title: "Computing"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					id: "598D08723B790798"
+					item: "create_new_age:copper_circuit"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6F5239F5CCBCEB17"
+					item: { Count: 3, id: "create:precision_mechanism" }
+					type: "item"
+				}
+			]
+			title: "Computing"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D265609C25DF806"]
+			icon: "xnet:controller"
+			id: "37A1062527AB0AE4"
+			rewards: [{
+				auto: "invisible"
+				id: "07B149AFB9740626"
+				ignore_reward_blocking: true
+				stage: "xnet"
+				team_reward: true
+				title: "Networking"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					id: "7C34FF4A2572859E"
+					item: "computercraft:wired_modem"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "63D2AE424BA04136"
+					item: { Count: 5, id: "create:precision_mechanism" }
+					type: "item"
+				}
+			]
+			title: "Networking"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"413BF175E0E521CB"
+				"151A93F9441BB58F"
+			]
+			id: "4CF2767AFAFA207D"
+			tasks: [{
+				id: "5F1C5618E2592479"
+				item: "immersiveengineering:mold_plate"
+				type: "item"
+			}]
+			title: "Advanced Ore Processing"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4CF2767AFAFA207D"]
+			icon: "alchemistry:atomizer"
+			id: "528C72B5560E3064"
+			min_required_dependencies: 2
+			rewards: [{
+				auto: "invisible"
+				id: "4EE2000A8ED013EE"
+				ignore_reward_blocking: true
+				stage: "alchemistry"
+				team_reward: true
+				title: "Alchemistry"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					id: "040101317CCB5DE4"
+					type: "checkmark"
+				}
+				{
+					id: "04F4B8ABEA639012"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 10000L
+				}
+			]
+			title: "Alchemistry"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["151A93F9441BB58F"]
+			icon: "create:brass_ingot"
+			id: "3219942A7314D207"
+			rewards: [{
+				auto: "invisible"
+				id: "374E72616FDFEF3E"
+				ignore_reward_blocking: true
+				stage: "cadv"
+				team_reward: true
+				title: "Advanced Creations"
+				type: "gamestage"
+			}]
+			tasks: [{
+				icon: "immersiveengineering:arc_furnace"
+				id: "6AD63272BE5DFE09"
+				observe_type: 0
+				timer: 0L
+				title: "Construct an Arc Furnace"
+				to_observe: "immersiveengineering:arc_furnace"
+				type: "observation"
+			}]
+			title: "Advanced Creations"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["732D47F2CAB2C43A"]
+			icon: "immersiveengineering:dynamo"
+			id: "07E139A89AF3B0BA"
+			rewards: [{
+				auto: "invisible"
+				id: "2DE277B9E00E74E2"
+				ignore_reward_blocking: true
+				stage: "iele_basic"
+				team_reward: true
+				title: "Basic Electricity"
+				type: "gamestage"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "657EA8E5F407A05B"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Basic Electricity"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3219942A7314D207"
+				"732D47F2CAB2C43A"
+			]
+			icon: "create_new_age:generator_coil"
+			id: "3267A72AE60FF5B3"
+			rewards: [{
+				auto: "invisible"
+				id: "328C7511AB4B6916"
+				ignore_reward_blocking: true
+				stage: "cele_basic"
+				team_reward: true
+				title: "Basic Electricity 2"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "5D84486F9B0E7F19"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "22B78BEE71A40EBD"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "Basic Electricity 2"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"07E139A89AF3B0BA"
+				"151A93F9441BB58F"
+			]
+			icon: "immersiveengineering:thermoelectric_generator"
+			id: "75C04FBB414B02A6"
+			rewards: [{
+				auto: "invisible"
+				id: "6DBBF2B4DC18BFE3"
+				ignore_reward_blocking: true
+				stage: "iele_adv"
+				team_reward: true
+				title: "Advanced Electricity"
+				type: "gamestage"
+			}]
+			tasks: [{
+				count: 5L
+				id: "1EDCAD752A509FF1"
+				item: { Count: 2, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "Advanced Electricity"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3267A72AE60FF5B3"]
+			icon: "createdieselgenerators:diesel_engine"
+			id: "6D518DAFA1AD1F5B"
+			rewards: [{
+				auto: "invisible"
+				id: "7039103C67FD7896"
+				ignore_reward_blocking: true
+				stage: "cele_adv"
+				team_reward: true
+				title: "Advanced Electricity 2"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "2EE52BC5F630B373"
+					item: { Count: 5, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3FD2208EDB4D8611"
+					item: { Count: 10, id: "create_new_age:overcharged_diamond" }
+					type: "item"
+				}
+			]
+			title: "Advanced Electricity 2"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"75C04FBB414B02A6"
+				"6D518DAFA1AD1F5B"
+			]
+			icon: "electrodynamics:wiregold"
+			id: "031672D8FAAAE29C"
+			rewards: [{
+				auto: "invisible"
+				id: "0541926CDB509F20"
+				ignore_reward_blocking: true
+				stage: "ed"
+				team_reward: true
+				title: "Electrodynamics"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					count: 20L
+					id: "70379FC4055491EB"
+					item: { Count: 10, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					id: "750A8F6B70D9EADC"
+					item: "kubejs:pcb"
+					type: "item"
+				}
+			]
+			title: "Electrodynamics"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D265609C25DF806"
+				"031672D8FAAAE29C"
+			]
+			icon: "nuclearscience:fissionreactorcore"
+			id: "5A5173ACA97AFE04"
+			rewards: [{
+				auto: "invisible"
+				id: "555B43979735F894"
+				ignore_reward_blocking: true
+				stage: "ns"
+				team_reward: true
+				title: "Nuclear Science"
+				type: "gamestage"
+			}]
+			tasks: [
+				{
+					count: 50L
+					id: "03D657F638A3BF11"
+					item: { Count: 50, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					id: "00B760802F45EB1D"
+					item: "electrodynamics:raworeuranium"
+					type: "item"
+				}
+			]
+			title: "Nuclear Science"
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37A1062527AB0AE4"]
+			icon: "hostilenetworks:sim_chamber"
+			id: "56A2426E5F256F70"
+			rewards: [{
+				auto: "invisible"
+				id: "122547499E1E9C2F"
+				ignore_reward_blocking: true
+				stage: "hn"
+				title: "Neural Networks"
+				type: "gamestage"
+			}]
+			tasks: [{
+				count: 15L
+				id: "54B30E4AD884C98C"
+				item: { Count: 10, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			title: "Neural Networks"
+			x: 4.5d
+			y: 6.0d
+		}
+	]
+	title: "Tech Tree"
+}

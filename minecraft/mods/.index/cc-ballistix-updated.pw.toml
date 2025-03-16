@@ -1,0 +1,16 @@
+filename = 'ccbx-1.20.1-1.3.jar'
+name = 'CC: BallistiX Updated'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8fcdf5fa2343ffa27ac570235a8fb7b65cd6f2c5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5418787
+project-id = 1035101

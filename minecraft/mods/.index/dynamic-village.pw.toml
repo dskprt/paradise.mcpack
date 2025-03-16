@@ -1,0 +1,16 @@
+filename = 'dynamicvillage-v0.4-1.20.1.jar'
+name = 'Create: Dynamic Village'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '50286eccc1f5ace423fe3e334f2f33cd73892101'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5565479
+project-id = 919759

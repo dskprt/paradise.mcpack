@@ -1,0 +1,16 @@
+filename = 'blocksyouneed_luna-1.8.1-forge-1.20.1.jar'
+name = 'Blocks You Need - Industrial, Steampunk, Laboratory, Space & more!'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '83bcce7e0982e8bb91855ffddb5ea1e44a75b4cc'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6297140
+project-id = 925718

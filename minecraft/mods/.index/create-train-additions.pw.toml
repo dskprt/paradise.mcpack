@@ -1,0 +1,16 @@
+filename = 'create_train_additions-(1.20.1)-0.3.1.jar'
+name = 'Create Train Additions'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e1869083828a3080bde85148b48640d54ea7142a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6230602
+project-id = 821428

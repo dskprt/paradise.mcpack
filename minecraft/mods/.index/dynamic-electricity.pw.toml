@@ -1,0 +1,16 @@
+filename = 'Dynamic Electricity-1.20.1-1.1.0-1.jar'
+name = 'Dynamic Electricity'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'af0808046ed103cedaabe1107a8f594853a25cb5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4880390
+project-id = 535933

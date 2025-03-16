@@ -1,0 +1,7 @@
+
+[electricLight]
+	#This value determines how many seconds does it take for the battery to consume 1 durability. Default: 18
+	BatteryDurabilityTime = 15.0
+	#Electric light requires energy per second. Default: 80
+	ElectricLightEnergy = 30.0
+

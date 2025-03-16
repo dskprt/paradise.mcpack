@@ -1,0 +1,16 @@
+filename = 'ProgressiveBosses-4.3.2-mc1.20.1.jar'
+name = 'Progressive Bosses'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'd11c0b44fd219456208c3b36d3dbc8e446180298'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6299856
+project-id = 289466

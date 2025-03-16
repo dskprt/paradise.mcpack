@@ -1,0 +1,16 @@
+filename = 'ColdSweat-2.4-b01a.jar'
+name = 'Cold Sweat'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'cc3e9359f39d6aaf46420e0df10b6c71c055b26c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6258866
+project-id = 506194

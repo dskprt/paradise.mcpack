@@ -1,0 +1,9 @@
+#Whether to play a sound when someone interacts with a service bell
+playSoundOnInteraction = true
+#How long toast notifications should display (in ticks)
+#Range: 20 ~ 200
+notificationDisplayTime = 60
+#Maximum number of toast notifications to show before cooldown (prevents spam)
+#Range: 0 ~ 10
+maxToastNotifications = 3
+

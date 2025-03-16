@@ -1,0 +1,16 @@
+filename = 'Nuclear Science-1.20.1-0.6.1-2.jar'
+name = 'Nuclear Science'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '09c05acbc34113979e1ec23cb6c510a9efd80cfa'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6100301
+project-id = 318646

@@ -1,0 +1,16 @@
+filename = 'WWOO-FABRIC+FORGE+QUILT-2.0.0.jar'
+name = "William Wythers' Overhauled Overworld"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'a1241d62fbf021013a8bd54d838245a044facfaf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4793728
+project-id = 921022

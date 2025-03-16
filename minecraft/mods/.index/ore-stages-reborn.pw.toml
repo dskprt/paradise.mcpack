@@ -1,0 +1,16 @@
+filename = 'sdm_orestages-1.20.1-0.5.1.jar'
+name = 'Ore Stages Reborn'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'c04cc6e538adcb265606087dacde2754238b2b17'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5614625
+project-id = 901507

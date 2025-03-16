@@ -1,0 +1,16 @@
+filename = 'Terralith_ReStoned_v1.2.jar'
+name = 'Terralith ReStoned'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6', '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7b6215d5ef0d8791c75fc9984a780f11af65b37b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6103296
+project-id = 1179585

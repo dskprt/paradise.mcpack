@@ -1,0 +1,5 @@
+
+[logbegone]
+	regex = ["Disconnecting VANILLA connection attempt", "Channels "]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "Empty height range", "GlDebug", "CloudRegionTextureGenerator", "There's no species provided for the EntityType"]
+

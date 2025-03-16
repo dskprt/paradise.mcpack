@@ -1,0 +1,16 @@
+filename = 'nomoreportals-forge-1.20-1.1.2.jar'
+name = 'No More Portals'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'ea5e86eca1d1e32f331475cd4e7263ea0a9039140a5c6702adfd4720798498fa85ef535eca527a4c3fd2ad24c417808ca930f8a1818e755c005612ddd9f09078'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/gQeZmycy/versions/6goKI1Oa/nomoreportals-forge-1.20-1.1.2.jar'
+
+[update.modrinth]
+mod-id = 'gQeZmycy'
+version = '6goKI1Oa'

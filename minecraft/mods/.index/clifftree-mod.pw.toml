@@ -1,0 +1,16 @@
+filename = 'clifftree-1.7.2.jar'
+name = 'Cliff under a Tree (Clifftree) - Mod Version'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1', '1.20.2', '1.20.2-Snapshot', '1.20.3', '1.20.3-Snapshot', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '6a3a0634e3e09572021498d3238306f864c7e69e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5820397
+project-id = 1048226
