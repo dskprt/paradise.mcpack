@@ -42,7 +42,7 @@ ServerEvents.recipes(e => {
 		e.shapeless(crr, [ "kubejs:clean_raw_" + clr, "#immersiveengineering:tools/hammers" ])
 		e.shapeless("kubejs:raw_" + clr + "_ingot", [ "#forge:dusts/" + clr, Item.of("kubejs:clay_mold") ]).damageIngredient(Item.of("kubejs:clay_mold"))
 		//e.shapeless("kubejs:raw_" + clr + "_ingot", [ crr, Item.of("kubejs:clay_mold") ]).damageIngredient(Item.of("kubejs:clay_mold"))
-		e.blasting(r, "kubejs:raw_" + clr + "_ingot")
+		e.smelting(r, "kubejs:raw_" + clr + "_ingot")
 		
 		// by machinery AUTOMATON
 		e.recipes.create.crushing(crr, "kubejs:clean_raw_" + clr)
