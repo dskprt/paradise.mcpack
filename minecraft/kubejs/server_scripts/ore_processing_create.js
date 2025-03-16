@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
 		e.remove({ input: "#forge:dusts/" + clr, output: r })
 		e.remove({ input: "#forge:dusts/" + clr, output: "#forge:ingots/" + ir })
 		e.remove({ input: "#forge:raw_materials/" + clr, output: r })
+		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
 
 		e.remove({ id: "immersiveengineering:arcfurnace/raw_block_" + ir })
 		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })
@@ -28,7 +29,7 @@ ServerEvents.recipes(e => {
 		
 		// by le hand XD
 		e.shapeless("8x kubejs:clean_raw_" + clr, [ "8x #forge:raw_materials/" + ir, "#forge:buckets/water" ])
-		e.shapeless("kubejs:clean_raw_" + clr, [ "#forge:raw_materials/" + ir, "brush" ])
+		e.shapeless("kubejs:clean_raw_" + clr, [ "#forge:raw_materials/" + ir, Item.of("brush") ]).damageIngredient(Item.of("brush"))
 		e.recipes.create.splashing("kubejs:clean_raw_" + clr, "#forge:raw_materials/" + ir)
 		e.shapeless(crr, [ "kubejs:clean_raw_" + clr, "#immersiveengineering:tools/hammers" ])
 		e.shapeless("kubejs:raw_" + clr + "_ingot", [ "#forge:dusts/" + clr, Item.of("kubejs:clay_mold") ]).damageIngredient(Item.of("kubejs:clay_mold"))
