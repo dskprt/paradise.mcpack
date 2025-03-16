@@ -2,7 +2,9 @@ ServerEvents.recipes(e => {
 	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:brass_hand", "#forge:sheets/gold")
 	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:electron_tube", "#forge:sheets/gold")
 
-	e.shapeless("create:rose_quartz", [ "#forge:gems/prismarine", "8x forge:dusts/redstone" ])
+	e.shapeless("create:rose_quartz", [ "#forge:gems/prismarine", "8x #forge:dusts/redstone" ])
+	e.shapeless("prismarine_shard", [ "prismarine", "#immersiveengineering:tools/hammers" ])
+	e.shapeless("prismarine_crystals", [ "prismarine_shard", "#immersiveengineering:tools/hammers" ])
 
 	// andesite age
 	e.remove({ id: "create:crafting/materials/andesite_alloy" })
