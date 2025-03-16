@@ -1,37 +1,41 @@
 import mods.recipestages.Recipes;
+import mods.recipemachinestage.RecipeMachineStage;
 
-mods.recipestages.Recipes.setRecipeStageByMod("cele_basic", "create_new_age");
-mods.recipestages.Recipes.setRecipeStageByMod("cele_basic", "createadditions");
-mods.recipestages.Recipes.setRecipeStageByMod("cele_adv", "createdieselgenerators");
+Recipes.setRecipeStageByMod("cele_basic", "create_new_age");
+Recipes.setRecipeStageByMod("cele_basic", "createadditions");
+Recipes.setRecipeStageByMod("cele_adv", "createdieselgenerators");
 
-mods.recipestages.Recipes.setRecipeStage("cbasic", <item:create:andesite_alloy>);
-mods.recipestages.Recipes.setRecipeStage("cadv", <item:create:brass_ingot>);
+Recipes.setRecipeStage("cbasic", <item:create:andesite_alloy>);
+Recipes.setRecipeStage("cadv", <item:create:brass_ingot>);
 
-mods.recipestages.Recipes.setRecipeStage("circ", <item:create_new_age:blank_circuit>);
-mods.recipestages.Recipes.setRecipeStage("circ", <item:create_new_age:copper_circuit>);
-mods.recipestages.Recipes.setRecipeStage("circ", <item:kubejs:raw_pcb>);
-mods.recipestages.Recipes.setRecipeStage("circ", <item:kubejs:pcb>);
+Recipes.setRecipeStage("circ", <item:create_new_age:blank_circuit>);
+Recipes.setRecipeStage("circ", <item:create_new_age:copper_circuit>);
+Recipes.setRecipeStage("circ", <item:kubejs:raw_pcb>);
+Recipes.setRecipeStage("circ", <item:kubejs:pcb>);
 
-mods.recipestages.Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:thermoelectric_generator>);
-mods.recipestages.Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:capacitor_mv>);
-mods.recipestages.Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:coil_mv>);
-mods.recipestages.Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:generator>);
-mods.recipestages.Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:dynamo>);
-mods.recipestages.Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:watermill>);
-mods.recipestages.Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:windmill>);
-mods.recipestages.Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:windmill_sail>);
-mods.recipestages.Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:capacitor_lv>);
-mods.recipestages.Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:coil_lv>);
+Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:thermoelectric_generator>);
+Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:capacitor_mv>);
+Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:coil_mv>);
+Recipes.setRecipeStage("iele_adv", <item:immersiveengineering:generator>);
+Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:dynamo>);
+Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:watermill>);
+Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:windmill>);
+Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:windmill_sail>);
+Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:capacitor_lv>);
+Recipes.setRecipeStage("iele_basic", <item:immersiveengineering:coil_lv>);
 
-mods.recipestages.Recipes.setRecipeStage("iadv", <item:immersiveengineering:rs_engineering>);
-mods.recipestages.Recipes.setRecipeStage("iadv", <item:immersiveengineering:heavy_engineering>);
-mods.recipestages.Recipes.setRecipeStage("iadv", <item:immersiveengineering:light_engineering>);
-mods.recipestages.Recipes.setRecipeStage("iadv", <item:immersiveengineering:ingot_electrum>);
-mods.recipestages.Recipes.setRecipeStage("iadv", <item:immersiveengineering:dust_electrum>);
+Recipes.setRecipeStage("iadv", <item:immersiveengineering:rs_engineering>);
+Recipes.setRecipeStage("iadv", <item:immersiveengineering:heavy_engineering>);
+Recipes.setRecipeStage("iadv", <item:immersiveengineering:light_engineering>);
+Recipes.setRecipeStage("iadv", <item:immersiveengineering:ingot_electrum>);
+Recipes.setRecipeStage("iadv", <item:immersiveengineering:dust_electrum>);
+RecipeMachineStage.addRecipe("create:sequenced_assembly", "create:kjs/7im23ikdqay5772vk2iivo0wn", "iadv");
+RecipeMachineStage.addRecipe("create:sequenced_assembly", "create:kjs/8hu741kqdtqoxgzczom5vmxhw", "iadv");
+RecipeMachineStage.addRecipe("create:sequenced_assembly", "create:kjs/93k9jd6otapsf5rg7wgwrrir", "iadv");
 
-mods.recipestages.Recipes.setRecipeStageByMod("ed", "electrodynamics");
-mods.recipestages.Recipes.setRecipeStageByMod("ns", "nuclearscience");
-mods.recipestages.Recipes.setRecipeStageByMod("cc", "computercraft");
-mods.recipestages.Recipes.setRecipeStageByMod("xnet", "xnet");
-mods.recipestages.Recipes.setRecipeStageByMod("alchemistry", "alchemistry");
-mods.recipestages.Recipes.setRecipeStageByMod("hn", "hostilenetworks");
+Recipes.setRecipeStageByMod("ed", "electrodynamics");
+Recipes.setRecipeStageByMod("ns", "nuclearscience");
+Recipes.setRecipeStageByMod("cc", "computercraft");
+Recipes.setRecipeStageByMod("xnet", "xnet");
+Recipes.setRecipeStageByMod("alchemistry", "alchemistry");
+Recipes.setRecipeStageByMod("hn", "hostilenetworks");
