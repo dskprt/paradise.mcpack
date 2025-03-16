@@ -55,7 +55,13 @@ ServerEvents.recipes(e => {
 		"immersiveengineering:crafting/hammercrushing_iron",
 		"immersiveengineering:crafting/raw_hammercrushing_iron",
 		"immersiveengineering:crafting/hammercrushing_gold",
-		"immersiveengineering:crafting/raw_hammercrushing_gold"
+		//"immersiveengineering:crafting/raw_hammercrushing_gold",
+		//"immersiveengineering:arcfurnace/raw_block_gold",
+		//"immersiveengineering:arcfurnace/raw_block_uranium",
+		//"immersiveengineering:arcfurnace/raw_block_silver",
+		//"immersiveengineering:arcfurnace/raw_block_cobalt",
+		//"immersiveengineering:arcfurnace/raw_block_iron",
+		//"immersiveengineering:arcfurnace/raw_block_zinc"
 	]
 	
 	for(const id of ids) {

@@ -12,13 +12,16 @@ ServerEvents.recipes(e => {
 		e.remove({ input: "#forge:dusts/" + clr, output: r })
 		e.remove({ input: "#forge:dusts/" + clr, output: "#forge:ingots/" + ir })
 		e.remove({ input: "#forge:raw_materials/" + clr, output: r })
+
+		e.remove({ id: "immersiveengineering:arcfurnace/raw_block_" + ir })
+		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })
 		
 		// crushing recipes for raw ore block to raw ore
 		e.recipes.create.crushing(oredrop, ore)
 		e.recipes.immersiveengineering.crusher(oredrop, ore, [ { chance: 0.5, output: oredrop }, { chance: 0.2, output: oredrop } ])
 		
 		// crushing recipes for ingot to crushed
-		e.recipes.create.crushing(crr, r)
+		e.recipes.create.crushing([crr, Item.of(crr).withChance(0.1)], r).processingTime(8 * 20)
 		e.recipes.create.crushing(crr, "#forge:ingots/" + ir)
 		e.recipes.immersiveengineering.crusher(crr, r, [ { chance: 0.01, output: "immersiveengineering:slag" } ])
 		e.recipes.immersiveengineering.crusher(crr, "#forge:ingots/" + ir, [ { chance: 0.01, output: "immersiveengineering:slag" } ])
@@ -30,7 +33,10 @@ ServerEvents.recipes(e => {
 		e.shapeless(crr, [ "kubejs:clean_raw_" + clr, "#immersiveengineering:tools/hammers" ])
 		e.shapeless("kubejs:raw_" + clr + "_ingot", [ "#forge:dusts/" + clr, Item.of("kubejs:clay_mold") ]).damageIngredient(Item.of("kubejs:clay_mold"))
 		//e.shapeless("kubejs:raw_" + clr + "_ingot", [ crr, Item.of("kubejs:clay_mold") ]).damageIngredient(Item.of("kubejs:clay_mold"))
-		e.smelting(r, "kubejs:raw_" + clr + "_ingot")
+		//e.smelting(r, "kubejs:raw_" + clr + "_ingot")
+		e.recipes.immersiveengineering.alloy(Item.of(r, 2), "kubejs:raw_" + clr + "_ingot", "kubejs:raw_" + clr + "_ingot", 60 * 20)
+		e.recipes.immersiveengineering.blast_furnace(r, "kubejs:raw_" + clr + "_ingot", "immersiveengineering:slag", 8 * 20)
+		e.recipes.immersiveengineering.arc_furnace(Item.of(r, 2), Item.of(crr, 2), "#forge:sand", "immersiveengineering:slag", 22 * 20)
 		
 		// by machinery AUTOMATON
 		e.recipes.create.crushing(crr, "kubejs:clean_raw_" + clr)

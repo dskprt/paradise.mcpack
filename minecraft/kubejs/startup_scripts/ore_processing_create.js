@@ -13,6 +13,6 @@ StartupEvents.registry('item', e => {
 			.displayName("Raw " + n)
 	}
 
-	cw(e, "create", "raw_zinc", "Raw Iron")
+	cw(e, "create", "raw_zinc", "Raw Zinc")
 	ci(e, "create", "zinc_ingot", "Zinc Ingot")
 })
