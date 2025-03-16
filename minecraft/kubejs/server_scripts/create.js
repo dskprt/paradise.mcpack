@@ -1,4 +1,9 @@
 ServerEvents.recipes(e => {
+	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:brass_hand", "#forge:sheets/gold")
+	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:electron_tube", "#forge:sheets/gold")
+
+	e.shapeless("create:rose_quartz", [ "#forge:gems/prismarine", "8x forge:dusts/redstone" ])
+
 	// andesite age
 	e.remove({ id: "create:crafting/materials/andesite_alloy" })
 	e.remove({ id: "create:crafting/materials/andesite_alloy_from_zinc" })
