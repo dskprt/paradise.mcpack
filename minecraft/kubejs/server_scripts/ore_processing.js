@@ -61,7 +61,10 @@ ServerEvents.recipes(e => {
 		//"immersiveengineering:arcfurnace/raw_block_silver",
 		//"immersiveengineering:arcfurnace/raw_block_cobalt",
 		//"immersiveengineering:arcfurnace/raw_block_iron",
-		//"immersiveengineering:arcfurnace/raw_block_zinc"
+		//"immersiveengineering:arcfurnace/raw_block_zinc",
+		"minecraft:netherite_scrap",
+		"minecraft:netherite_scrap_from_blasting",
+		"immersiveengineering:arcfurnace/netherite_scrap"
 	]
 	
 	for(const id of ids) {
@@ -104,17 +107,6 @@ ServerEvents.recipes(e => {
 	})
 	
 	function purge(e, ir) {
-		e.remove({ input: ore, output: r })
-		e.remove({ input: ore.replace(":", ":deepslate"), output: r })
-		e.remove({ input: ore, output: "#forge:ingots/" + ir })
-		e.remove({ input: ore.replace(":", ":deepslate"), output: "#forge:ingots/" + ir })
-		e.remove({ input: "#forge:ores/" + clr, output: r })
-		e.remove({ input: "#forge:ores/" + clr, output: "#forge:ingots/" +  ir })
-		e.remove({ input: "#forge:dusts/" + clr, output: r })
-		e.remove({ input: "#forge:dusts/" + clr, output: "#forge:ingots/" + ir })
-		e.remove({ input: "#forge:raw_materials/" + clr, output: r })
-		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
-
 		e.remove({ id: "immersiveengineering:arcfurnace/raw_block_" + ir })
 		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })
 		
@@ -142,4 +134,8 @@ ServerEvents.recipes(e => {
 		"vanadinite",
 		"silver"
 	]
+	
+	for(let p of toPurge) {
+		purge(e, p)
+	}
 })
