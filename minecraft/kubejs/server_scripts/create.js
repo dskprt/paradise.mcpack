@@ -3,8 +3,8 @@ ServerEvents.recipes(e => {
 	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:electron_tube", "#forge:sheets/gold")
 
 	e.shapeless("create:rose_quartz", [ "#forge:gems/prismarine", "8x #forge:dusts/redstone" ])
-	//e.shapeless("prismarine_shard", [ "prismarine", "#immersiveengineering:tools/hammers" ])
-	e.recipes.create.crushing(["prismarine_shard", Item.of("prismarine_shard").withChance(0.4)], "prismarine").processingTime(10 * 20)
+	e.shapeless("2x prismarine_shard", [ "prismarine", "#immersiveengineering:tools/hammers" ])
+	//e.recipes.create.crushing(["prismarine_shard", Item.of("prismarine_shard").withChance(0.4)], "prismarine").processingTime(10 * 20)
 	//e.shapeless("prismarine_crystals", [ "prismarine_shard", "#immersiveengineering:tools/hammers" ])
 	e.recipes.create.mixing("prismarine_crystals", ["prismarine_shard", Fluid.water(50)])
 
