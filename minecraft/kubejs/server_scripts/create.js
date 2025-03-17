@@ -1,6 +1,15 @@
 ServerEvents.recipes(e => {
-	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:brass_hand", "#forge:sheets/gold")
-	e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:electron_tube", "#forge:sheets/gold")
+	//e.replaceInput({ id: "create:crafting/kinetics/deployer" }, "create:brass_hand", "#forge:plates/gold")
+	e.remove({ id: "create:crafting/kinetics/brass_hand" })
+	e.shaped("create:brass_hand", [
+		' A ',
+		'ZZZ',
+		'CCC'
+	], {
+		A: "create:andesite_alloy",
+		C: "#forge:plates/copper",
+		Z: "#forge:plates/zinc"
+	})
 
 	e.shapeless("create:rose_quartz", [ "#forge:gems/prismarine", "8x #forge:dusts/redstone" ])
 	e.shapeless("2x prismarine_shard", [ "prismarine", "#immersiveengineering:tools/hammers" ])
@@ -22,6 +31,8 @@ ServerEvents.recipes(e => {
 	
 	// brass age
 	e.remove({ id: "create:mixing/brass_ingot" })
+	e.remove({ id: "immersiveengineering:alloysmelter/brass" })
+
 	e.recipes.immersiveengineering.arc_furnace("create:brass_ingot", "#forge:ingots/copper", "#forge:ingots/zinc", "immersiveengineering:slag")
 	
 	e.replaceInput({ id: "create:sequenced_assembly/precision_mechanism" }, "#forge:plates/gold", "#forge:plates/brass")
