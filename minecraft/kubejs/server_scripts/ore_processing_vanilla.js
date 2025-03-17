@@ -15,7 +15,7 @@ ServerEvents.recipes(e => {
 	function r(e, ore, oredrop, ir, clr, crr, r) {
 		// remove recipes for ingot
 		//e.remove({ output: r })
-		e.remove({ input: ore, output: r })
+		/*e.remove({ input: ore, output: r })
 		e.remove({ input: ore.replace(":", ":deepslate_"), output: r })
 		e.remove({ input: ore, output: "#forge:ingots/" + ir })
 		e.remove({ input: ore.replace(":", ":deepslate_"), output: "#forge:ingots/" + ir })
@@ -25,9 +25,10 @@ ServerEvents.recipes(e => {
 		e.remove({ input: "#forge:dusts/" + clr, output: "#forge:ingots/" + ir })
 		e.remove({ input: "#forge:raw_materials/" + clr, output: r })
 		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
+		e.remove({ id: "tconstruct:smeltery/melting/metal/gold/raw" })
 
 		e.remove({ id: "immersiveengineering:arcfurnace/raw_block_" + ir })
-		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })
+		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })*/
 		
 		// crushing recipes for raw ore block to raw ore
 		e.recipes.create.crushing(oredrop, ore)
@@ -74,4 +75,8 @@ ServerEvents.recipes(e => {
 	r(e, "minecraft:iron_ore", "minecraft:raw_iron", "iron", "iron", "create:crushed_raw_iron", "minecraft:iron_ingot")
 	r(e, "minecraft:gold_ore", "minecraft:raw_gold", "gold", "gold", "create:crushed_raw_gold", "minecraft:gold_ingot")
 	r(e, "minecraft:copper_ore", "minecraft:raw_copper", "copper", "copper", "create:crushed_raw_copper", "minecraft:copper_ingot")
+	
+	// netherite
+	e.remove({ output: "minecraft:netherite_scrap" })
+	e.recipes.create.mixing("minecraft:netherite_scrap", ["ancient_debris", "2x obsidian", "diamond"]).superheated()
 })

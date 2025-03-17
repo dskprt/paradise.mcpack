@@ -102,4 +102,44 @@ ServerEvents.recipes(e => {
 		W: "#forge:wool",
 		S: "#forge:rods/wooden"
 	})
+	
+	function purge(e, ir) {
+		e.remove({ input: ore, output: r })
+		e.remove({ input: ore.replace(":", ":deepslate"), output: r })
+		e.remove({ input: ore, output: "#forge:ingots/" + ir })
+		e.remove({ input: ore.replace(":", ":deepslate"), output: "#forge:ingots/" + ir })
+		e.remove({ input: "#forge:ores/" + clr, output: r })
+		e.remove({ input: "#forge:ores/" + clr, output: "#forge:ingots/" +  ir })
+		e.remove({ input: "#forge:dusts/" + clr, output: r })
+		e.remove({ input: "#forge:dusts/" + clr, output: "#forge:ingots/" + ir })
+		e.remove({ input: "#forge:raw_materials/" + clr, output: r })
+		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
+
+		e.remove({ id: "immersiveengineering:arcfurnace/raw_block_" + ir })
+		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })
+		
+		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/ore_dense" })
+		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/ore_singular" })
+		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/raw_ore" })
+		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/raw_block" })
+		
+		if(ir === "gold") {
+			e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/nether_gold_ore" })
+		}
+	}
+	
+	const toPurge = [
+		"nickel",
+		"zinc",
+		"lead",
+		"lithium",
+		"molybdenum",
+		"tin",
+		"gold",
+		"iron",
+		"copper",
+		"uranium",
+		"vanadinite",
+		"silver"
+	]
 })
