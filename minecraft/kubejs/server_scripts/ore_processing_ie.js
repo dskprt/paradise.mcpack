@@ -3,7 +3,7 @@ ServerEvents.recipes(e => {
 	function r(e, ore, oredrop, ir, clr, crr, r) {
 		// remove recipes for ingot
 		//e.remove({ output: r })
-		e.remove({ input: ore, output: r })
+		/*e.remove({ input: ore, output: r })
 		e.remove({ input: ore.replace(":", ":deepslate_"), output: r })
 		e.remove({ input: ore, output: "#forge:ingots/" + ir })
 		e.remove({ input: ore.replace(":", ":deepslate_"), output: "#forge:ingots/" + ir })
@@ -15,12 +15,7 @@ ServerEvents.recipes(e => {
 		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
 
 		e.remove({ id: "immersiveengineering:arcfurnace/raw_block_" + ir })
-		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })
-
-		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/ore_dense" })
-		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/ore_singular" })
-		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/raw_ore" })
-		e.remove({ id: "tconstruct:smeltery/melting/metal/" + ir + "/raw_block" })
+		e.remove({ id: "immersiveengineering:arcfurnace/raw_ore_" + ir })*/
 		
 		// crushing recipes for raw ore block to raw ore
 		e.recipes.create.crushing(oredrop, ore)
