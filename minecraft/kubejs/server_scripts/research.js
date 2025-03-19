@@ -7,7 +7,7 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:nuggets/gold" ]),
 		e.recipes.create.pressing(inter, inter),
 		e.recipes.create.cutting(inter, inter),
-	]).transitionalItem(inter).loops(4)
+	]).transitionalItem(inter).loops(3)
 	
 	inter = "kubejs:incomplete_premium_coin"
 	e.recipes.create.sequenced_assembly([
