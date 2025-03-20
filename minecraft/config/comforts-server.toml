@@ -1,7 +1,7 @@
 #If enabled, players automatically attempt to use sleeping bags when placed.
 autoUse = false
 #If enabled, players cannot sleep again for a period of time after sleeping.
-restrictSleeping = true
+restrictSleeping = false
 #If restrictSleeping is true, this value will determine the length of wait time (larger numbers sleep sooner).
 #Range: 1.0 ~ 20.0
 restMultiplier = 2.0

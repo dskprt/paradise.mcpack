@@ -6,13 +6,13 @@
 		"Generate Dragon Skeletons" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Skeleton Chance" = 340
+		"Generate Dragon Skeleton Chance" = 600
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Cave Chance" = 400
+		"Generate Dragon Cave Chance" = 900
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Roost Chance" = 700
+		"Generate Dragon Roost Chance" = 1300
 		#1 out of this number chance per block that gold will generate in dragon lairs.
 		#Range: 1 ~ 10000
 		"Dragon Den Gold Amount" = 4
@@ -26,9 +26,9 @@
 		"Dangerous World Gen Dist From Spawn" = 800
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 		#Range: 1 ~ 10000
-		"Dangerous World Gen Dist Seperation" = 300
+		"Dangerous World Gen Dist Seperation" = 500
 		#Whether to generate glacier biomes or not
-		"Generate Glaciers" = false
+		"Generate Glaciers" = true
 		#Glacier Spawn Weight. Higher number = more common
 		#Range: 1 ~ 10000
 		"Glacier Spawn Weight" = 4
