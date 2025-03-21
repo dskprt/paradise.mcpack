@@ -4,6 +4,7 @@ minecraft/config/blockswap/known_states/
 !minecraft/defaultconfigs
 !minecraft/mods
 minecraft/mods/*.disabled
+minecraft/mods/*.duplicate
 minecraft/mods/srvOnly*
 minecraft/mods/AmbientSounds*
 !minecraft/scripts
