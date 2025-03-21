@@ -39,3 +39,4 @@ Recipes.setRecipeStageByMod("cc", "computercraft");
 Recipes.setRecipeStageByMod("xnet", "xnet");
 Recipes.setRecipeStageByMod("alchemistry", "alchemistry");
 Recipes.setRecipeStageByMod("hn", "hostilenetworks");
+Recipes.setRecipeStageByMod("pc", "pneumaticcraft");
