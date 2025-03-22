@@ -6,4 +6,6 @@ ServerEvents.recipes(e => {
 	], {
 		P: "#minecraft:planks"
 	})
+
+	e.shapeless("createaddition:zincsheet", ["#immersiveengineering:tools/hammers", "#forge:ingots/zinc"])
 })
