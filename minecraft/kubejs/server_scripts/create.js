@@ -32,6 +32,7 @@ ServerEvents.recipes(e => {
 	// brass age
 	e.remove({ id: "create:mixing/brass_ingot" })
 	e.remove({ id: "immersiveengineering:alloysmelter/brass" })
+	e.remove({ id: "immersiveengineering:arcfurnace/alloy_brass" })
 
 	e.recipes.immersiveengineering.arc_furnace("create:brass_ingot", "#forge:ingots/copper", "#forge:ingots/zinc", "immersiveengineering:slag")
 	
