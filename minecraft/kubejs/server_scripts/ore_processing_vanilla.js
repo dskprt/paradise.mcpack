@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
 		e.recipes.immersiveengineering.arc_furnace(Item.of(r, 2), Item.of(crr, 2), "#forge:sand", "immersiveengineering:slag", 22 * 20)
 		
 		// by machinery AUTOMATON
-		e.recipes.create.pressing(crr, "kubejs:clean_raw_" + clr)
+		e.recipes.create.milling(crr, "kubejs:clean_raw_" + clr)
 		e.recipes.create.crushing([crr, Item.of(crr).withChance(0.3)], "kubejs:clean_raw_" + clr)
 		e.recipes.immersiveengineering.crusher(crr, "#forge:raw_materials/" + ir, [ { chance: 0.2, output: crr } ])
 		//e.recipes.immersiveengineering.metal_press("kubejs:raw_" + clr + "_ingot", crr, "immersiveengineering:mold_plate")
