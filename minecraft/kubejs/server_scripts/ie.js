@@ -49,4 +49,7 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:dusts/redstone" ]),
 		e.recipes.create.pressing(inter, inter),
 	]).transitionalItem(inter).loops(1)
+
+	// steel block
+	e.replaceInput({ id: "immersiveengineering:crafting/ingot_steel_to_storage_steel" }, "immersiveengineering:ingot_steel", "#forge:ingots/steel")
 })
