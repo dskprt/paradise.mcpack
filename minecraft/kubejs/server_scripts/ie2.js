@@ -6,9 +6,9 @@ ServerEvents.recipes(e => {
 	let inter = "kubejs:incomplete_le"
 	e.recipes.create.sequenced_assembly([
 		Item.of("immersiveengineering:light_engineering", 2).withChance(85),
-		Item.of("immersiveengineering:sheetmetal_aluminum").withChance(12),
+		Item.of("immersiveengineering:sheetmetal_iron").withChance(12),
 		Item.of("immersiveengineering:component_iron").withChance(4),
-	], "immersiveengineering:sheetmetal_aluminum", [
+	], "immersiveengineering:sheetmetal_iron", [
 		e.recipes.create.pressing(inter, inter),
 		e.recipes.create.deploying(inter, [ inter, "#forge:ingots/copper" ]),
 		e.recipes.create.deploying(inter, [ inter, "immersiveengineering:component_iron" ]),
