@@ -12,6 +12,9 @@ ServerEvents.recipes(e => {
 		e.remove({ input: "#forge:dusts/" + clr, output: "#forge:ingots/" + ir })
 		e.remove({ input: "#forge:raw_materials/" + clr, output: r })
 		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
+		e.remove({ id: "immersiveengineering:crusher/ingot_" + ir })
+		e.remove({ id: "immersiveengineering:crusher/ore_" + ir })
+	e.remove({ id: "immersiveengineering:crusher/raw_ore_" + ir })
 		
 		// crushing recipes for raw ore block to raw ore
 		e.recipes.create.crushing(oredrop, ore)
@@ -36,7 +39,7 @@ ServerEvents.recipes(e => {
 		e.recipes.immersiveengineering.arc_furnace(Item.of(r, 2), Item.of(crr, 2), "#forge:sand", "immersiveengineering:slag", 22 * 20)
 		
 		// by machinery AUTOMATON
-		e.recipes.create.milling(crr, "kubejs:clean_raw_" + clr)
+		e.recipes.create.milling(Item.of(crr).withChance(0.9), "kubejs:clean_raw_" + clr)
 		e.recipes.create.crushing([crr, Item.of(crr).withChance(0.3)], "kubejs:clean_raw_" + clr)
 		e.recipes.immersiveengineering.crusher(crr, "#forge:raw_materials/" + ir, [ { chance: 0.2, output: crr } ])
 		//e.recipes.immersiveengineering.metal_press("kubejs:raw_" + clr + "_ingot", crr, "immersiveengineering:mold_plate")
