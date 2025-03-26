@@ -54,5 +54,5 @@ ServerEvents.recipes(e => {
 	e.replaceInput({ id: "immersiveengineering:crafting/ingot_steel_to_storage_steel" }, "immersiveengineering:ingot_steel", "#forge:ingots/steel")
 
 	// coke dust
-	e.create.milling(Item.of("immersiveengineering:dust_coke").withChance(0.33), "#forge:coal_coke")
+	e.recipes.create.milling(Item.of("immersiveengineering:dust_coke").withChance(0.33), "#forge:coal_coke")
 })
