@@ -45,7 +45,7 @@ ServerEvents.recipes(e => {
 	e.remove({ id: "create_new_age:reinforced_motor" })
 	e.remove({ id: "create_new_age:shaped/stirling_engine" })
 	
-	e.replaceInput({ output: "create_new_age:carbon_brushes" }, "andesite_alloy", "#forge:ingots/brass" )
+	e.replaceInput({ id: "recipestages:create_new_age_shaped/carbon_brushes" }, "andesite_alloy", "#forge:ingots/brass" )
 	
 	e.recipes.create.mechanical_crafting("create_new_age:generator_coil", [
 		' III ',
