@@ -64,7 +64,16 @@ ServerEvents.recipes(e => {
 		//"immersiveengineering:arcfurnace/raw_block_zinc",
 		"minecraft:netherite_scrap",
 		"minecraft:netherite_scrap_from_blasting",
-		"immersiveengineering:arcfurnace/netherite_scrap"
+		"immersiveengineering:arcfurnace/netherite_scrap",
+		"create:splashing/crushed_raw_iron",
+		"create:splashing/crushed_raw_gold",
+		"create:splashing/crushed_raw_copper",
+		"create:splashing/crushed_raw_zinc",
+		"create:splashing/immersiveengineering/crushed_raw_silver",
+		"create:splashing/immersiveengineering/crushed_raw_lead",
+		"create:splashing/immersiveengineering/crushed_raw_aluminum",
+		"create:splashing/immersiveengineering/crushed_raw_uranium",
+		"create:splashing/immersiveengineering/crushed_raw_nickel"
 	]
 	
 	for(const id of ids) {
