@@ -21,13 +21,13 @@
 	windmillsEnabled = true
 	#Penalty for Windmills placed on whitelisted but not on preferential biomes [windmills_boosted biome tag].
 	#Range: 0.0 ~ 1.0
-	windmillPenalty = 0.5
+	windmillPenalty = 1.0
 	#The minimum floor area required. Default: 1/4 of the max area [PI * 32 ^ 2].
 	#Range: > 1
 	windmillThreshold = 804
 	#The minimum length of air current required.
 	#Range: > 1
-	windmillRequiredRange = 24
+	windmillRequiredRange = 32
 	#The minimum amount of points that must hit windmillRequiredRange.
 	#Range: > 1
 	windmillRequiredRangePoints = 128
