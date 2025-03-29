@@ -79,6 +79,7 @@ global.research_stages = {
 	"create:brass_ingot": "create_advanced",
 	"create:brass_sheet": "create_advanced",
 	"create:brass_nugget": "create_advanced",
+	"create:brass_casing": "create_advanced",
 	"computercraft:turtle_advanced": "computing_advanced",
 	"computercraft:computer_advanced": "computing_advanced",
 	"computercraft:pocket_computer_advanced": "computing_advanced",
