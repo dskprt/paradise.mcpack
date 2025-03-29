@@ -8,6 +8,8 @@ minecraft/mods/*.duplicate
 minecraft/mods/srvOnly*
 minecraft/mods/cOnly*
 minecraft/mods/AmbientSounds*
+minecraft/mods/.index
 !minecraft/scripts
 !minecraft/kubejs
+minecraft/kubejs/probe
 !minecraft/tacz

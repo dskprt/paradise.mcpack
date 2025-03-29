@@ -4,7 +4,8 @@ ServerEvents.recipes(e => {
 		"electrodynamics:circuit_advanced",
 		"electrodynamics:circuit_basic",
 		"electrodynamics:circuit_elite",
-		"electrodynamics:circuit_ultimate"
+		"electrodynamics:circuit_ultimate",
+		"electrodynamics:motor_stainlesssteel"
 	]
 	
 	for(const id of ids) {
@@ -13,7 +14,7 @@ ServerEvents.recipes(e => {
 	
 	//
 	
-	e.shaped("electrodynamics:motor", [
+	e.recipes.create.mechanical_crafting("electrodynamics:motor", [
 		' S ',
 		'WCW',
 		'BEB'
@@ -23,6 +24,16 @@ ServerEvents.recipes(e => {
 		C: "electrodynamics:coil",
 		B: "#forge:plates/brass",
 		E: "#forge:ingots/electrum"
+	})
+
+	e.recipes.create.mechanical_crafting("electrodynamics:motor", [
+		' S ',
+		'WCW',
+		' S '
+	], {
+		S: "#forge:ingots/stainlesssteel",
+		W: "#forge:wires/insulated_copper",
+		C: "electrodynamics:coil"
 	})
 	
 	//
@@ -55,6 +66,7 @@ ServerEvents.recipes(e => {
 		Item.of("kubejs:raw_circuit_basic").withChance(100)
 	], "kubejs:pcb", [
 		e.recipes.create.deploying(inter, [ inter, "createaddition:capacitor" ]),
+		e.recipes.create.deploying(inter, [ inter, "create_new_age:copper_circuit" ]),
 		e.recipes.create.deploying(inter, [ inter, "#forge:dusts/redstone" ]),
 		e.recipes.create.pressing(inter, inter)
 	]).transitionalItem(inter).loops(1)
@@ -85,7 +97,7 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/steel" ]),
 		e.recipes.create.deploying(inter, [ inter, "#forge:gems/lapis" ]),
 		e.recipes.create.pressing(inter, inter)
-	]).transitionalItem(inter).loops(2)
+	]).transitionalItem(inter).loops(3)
 	
 	inter = "kubejs:incomplete_pcb_ultimate"
 	e.recipes.create.sequenced_assembly([
@@ -99,7 +111,8 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/gold" ]),
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/steel" ]),
 		e.recipes.create.deploying(inter, [ inter, "create_new_age:overcharged_diamond" ]),
+		e.recipes.create.deploying(inter, [ inter, "create_new_age:copper_circuit" ]),
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/steel" ]),
 		e.recipes.create.pressing(inter, inter)
-	]).transitionalItem(inter).loops(3)
+	]).transitionalItem(inter).loops(4)
 })

@@ -14,7 +14,7 @@ ServerEvents.recipes(e => {
 		e.remove({ input: "#forge:raw_materials/" + clr, output: "#forge:ingots/" + ir })
 		e.remove({ id: "immersiveengineering:crusher/ingot_" + ir })
 		e.remove({ id: "immersiveengineering:crusher/ore_" + ir })
-	e.remove({ id: "immersiveengineering:crusher/raw_ore_" + ir })
+		e.remove({ id: "immersiveengineering:crusher/raw_ore_" + ir })
 		
 		// crushing recipes for raw ore block to raw ore
 		e.recipes.create.crushing(oredrop, ore)
@@ -47,4 +47,5 @@ ServerEvents.recipes(e => {
 	}
 	
 	r(e, "create:zinc_ore", "create:raw_zinc", "zinc", "zinc", "create:crushed_raw_zinc", "create:zinc_ingot")
+	r(e, "creatingspace:moon_cobalt_ore", "creatingspace:raw_cobalt", "cobalt", "cobalt", "creatingspace:crushed_cobalt_ore", "creatingspace:cobalt_ingot")
 })

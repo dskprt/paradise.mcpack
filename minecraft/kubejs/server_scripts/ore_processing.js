@@ -73,7 +73,12 @@ ServerEvents.recipes(e => {
 		"create:splashing/immersiveengineering/crushed_raw_lead",
 		"create:splashing/immersiveengineering/crushed_raw_aluminum",
 		"create:splashing/immersiveengineering/crushed_raw_uranium",
-		"create:splashing/immersiveengineering/crushed_raw_nickel"
+		"create:splashing/immersiveengineering/crushed_raw_nickel",
+		"create:crushing/raw_silver",
+		"create:crushing/raw_lead",
+		"create:crushing/raw_aluminum",
+		"create:crushing/raw_uranium",
+		"create:crushing/raw_nickel"
 	]
 	
 	for(const id of ids) {

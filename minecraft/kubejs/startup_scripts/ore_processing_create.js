@@ -15,4 +15,7 @@ StartupEvents.registry('item', e => {
 
 	cw(e, "create", "raw_zinc", "Raw Zinc")
 	ci(e, "create", "zinc_ingot", "Zinc Ingot")
+	
+	cw(e, "creatingspace", "raw_cobalt", "Raw Cobalt")
+	ci(e, "creatingspace", "cobalt_ingot", "Cobalt Ingot")
 })
