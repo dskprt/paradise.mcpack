@@ -6,11 +6,11 @@
 	#Format for every entry is "<namespace>:<path>". Tags are supported, must be in the format of "#<namespace>:<path>". Namespace may be omitted to use "minecraft" by default. May use asterisk as wildcard parameter via pattern matching, e.g. "minecraft:*_shulker_box" to match all shulker boxes no matter of color.
 	death_message_whitelist = []
 	#Show death message for named entities.
-	named_entity_deaths = true
+	named_entity_deaths = false
 	#Show death message for players.
 	player_deaths = true
 	#Show death message for villagers.
-	villager_deaths = true
+	villager_deaths = false
 	#Show death message for tamed entities.
 	pet_deaths = true
 	#Entities to be excluded when "all_deaths" is enabled.

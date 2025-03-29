@@ -30,7 +30,7 @@
         "blacklist": []
       },
       "enabled": true,
-      "requireTool": false,
+      "requireTool": true,
       "allowedToolFilter": {
         "whitelistedTags": [
           "minecraft:axes"
@@ -43,13 +43,12 @@
       "filter": {
         "whitelistedTags": [],
         "whitelist": [
-          "minecraft:cactus",
           "minecraft:bamboo"
         ],
         "blacklist": []
       },
       "enabled": true,
-      "requireTool": false,
+      "requireTool": true,
       "allowedToolFilter": {
         "whitelistedTags": [],
         "whitelist": [],
@@ -58,7 +57,7 @@
     },
     "chorusTree": {
       "enabled": true,
-      "requireTool": false,
+      "requireTool": true,
       "allowedToolFilter": {
         "whitelistedTags": [],
         "whitelist": [],
@@ -67,7 +66,7 @@
     },
     "mushroomTree": {
       "enabled": true,
-      "requireTool": false,
+      "requireTool": true,
       "allowedToolFilter": {
         "whitelistedTags": [],
         "whitelist": [],
