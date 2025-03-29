@@ -4,7 +4,7 @@
 	filename: "tech_tree"
 	group: ""
 	id: "0742DC3A0BBAE172"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -61,12 +61,12 @@
 			icon: "create_new_age:copper_circuit"
 			id: "6D763FAB92EBF86D"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p circ"
 				elevate_perms: true
 				id: "1B0B36602D8012FA"
 				type: "command"
 			}]
-			subtitle: "Unlocks Circuit and PCB recipes from Create: New Age and KubeJS"
 			tasks: [{
 				consume_items: true
 				count: 3L
@@ -86,17 +86,16 @@
 			icon: "immersiveengineering:heavy_engineering"
 			id: "151A93F9441BB58F"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p iadv"
 				elevate_perms: true
 				id: "54941F9544AB1AF5"
 				type: "command"
 			}]
-			subtitle: "Unlocks recipes for Immersive Engineering Heavy, Light, and Engineering blocks and Electrum"
 			tasks: [{
-				consume_items: true
 				count: 3L
 				id: "467C37E53834CB29"
-				item: "kubejs:coin"
+				item: { Count: 3, id: "kubejs:coin" }
 				type: "item"
 			}]
 			title: "Advanced Engineering"
@@ -108,12 +107,12 @@
 			icon: "computercraft:computer_normal"
 			id: "5D265609C25DF806"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p cc"
 				elevate_perms: true
 				id: "741FC8F23E69DF16"
 				type: "command"
 			}]
-			subtitle: "Unlocks CC: Tweaked"
 			tasks: [
 				{
 					id: "598D08723B790798"
@@ -121,7 +120,6 @@
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 5L
 					id: "6F5239F5CCBCEB17"
 					item: "kubejs:coin"
@@ -137,14 +135,13 @@
 			icon: "xnet:controller"
 			id: "37A1062527AB0AE4"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p xnet"
 				elevate_perms: true
 				id: "4A8A8FE691AE7B54"
 				type: "command"
 			}]
-			subtitle: "Unlocks XNet"
 			tasks: [{
-				consume_items: true
 				count: 5L
 				id: "63D2AE424BA04136"
 				item: "kubejs:coin"
@@ -174,13 +171,24 @@
 			icon: "alchemistry:atomizer"
 			id: "528C72B5560E3064"
 			min_required_dependencies: 2
-			rewards: [{
-				command: "/gamestage add @p alchemistry"
-				elevate_perms: true
-				id: "4FC31673D9F0F8D9"
-				type: "command"
-			}]
-			subtitle: "Unlocks Alchemistry"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4EE2000A8ED013EE"
+					ignore_reward_blocking: true
+					stage: "alchemistry"
+					team_reward: true
+					title: "Alchemistry"
+					type: "gamestage"
+				}
+				{
+					auto: "no_toast"
+					command: "/gamestage add @p alchemistry"
+					elevate_perms: true
+					id: "4FC31673D9F0F8D9"
+					type: "command"
+				}
+			]
 			tasks: [
 				{
 					id: "04F4B8ABEA639012"
@@ -189,10 +197,9 @@
 					value: 10000L
 				}
 				{
-					consume_items: true
 					count: 2L
 					id: "2679282DBDF0BB72"
-					item: "kubejs:premium_coin"
+					item: { Count: 5, id: "kubejs:premium_coin" }
 					type: "item"
 				}
 			]
@@ -229,12 +236,12 @@
 			icon: "immersiveengineering:dynamo"
 			id: "07E139A89AF3B0BA"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p iele_basic"
 				elevate_perms: true
 				id: "340C32D22000F5F3"
 				type: "command"
 			}]
-			subtitle: "Unlocks the Dynamo, Watermill, Windmill, and LV components from Immersive Engineering"
 			tasks: [{
 				consume_items: true
 				count: 10L
@@ -254,12 +261,12 @@
 			icon: "create_new_age:generator_coil"
 			id: "3267A72AE60FF5B3"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p cele_basic"
 				elevate_perms: true
 				id: "6258EECD3D90E6DB"
 				type: "command"
 			}]
-			subtitle: "Unlocks electricity from Create: New Age and Create Crafts \\& Additions"
 			tasks: [
 				{
 					consume_items: true
@@ -286,22 +293,20 @@
 			icon: "immersiveengineering:thermoelectric_generator"
 			id: "75C04FBB414B02A6"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p iele_adv"
 				elevate_perms: true
 				id: "4285EAB5DEAB8375"
 				type: "command"
 			}]
-			subtitle: "Unlocks HV components and Thermoelectric Generator from Immersive Engineering"
 			tasks: [
 				{
-					consume_items: true
 					count: 5L
 					id: "1EDCAD752A509FF1"
 					item: "kubejs:coin"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 10L
 					id: "69131C1E71CBC898"
 					item: "kubejs:premium_coin"
@@ -317,32 +322,29 @@
 			icon: "createdieselgenerators:diesel_engine"
 			id: "6D518DAFA1AD1F5B"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p cele_adv"
 				elevate_perms: true
 				id: "2423FCE767A758EA"
 				type: "command"
 			}]
-			subtitle: "Unlocks Create: Diesel Generators"
 			tasks: [
 				{
-					consume_items: true
 					count: 5L
 					id: "2EE52BC5F630B373"
 					item: "kubejs:coin"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 3L
 					id: "3FD2208EDB4D8611"
 					item: "create_new_age:overcharged_diamond"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 10L
 					id: "5238268EFA2A3628"
-					item: "kubejs:premium_coin"
+					item: { Count: 10, id: "kubejs:premium_coin" }
 					type: "item"
 				}
 			]
@@ -358,15 +360,14 @@
 			icon: "electrodynamics:wiregold"
 			id: "031672D8FAAAE29C"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p ed"
 				elevate_perms: true
 				id: "37948F7C1B5FFCC4"
 				type: "command"
 			}]
-			subtitle: "Unlocks Electrodynamics"
 			tasks: [
 				{
-					consume_items: true
 					count: 30L
 					id: "70379FC4055491EB"
 					item: "kubejs:premium_coin"
@@ -390,15 +391,14 @@
 			icon: "nuclearscience:fissionreactorcore"
 			id: "5A5173ACA97AFE04"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p ns"
 				elevate_perms: true
 				id: "571BC0BFC6179C0D"
 				type: "command"
 			}]
-			subtitle: "Unlocks Nuclear Science"
 			tasks: [
 				{
-					consume_items: true
 					count: 200L
 					id: "03D657F638A3BF11"
 					item: "kubejs:premium_coin"
@@ -410,10 +410,9 @@
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 50L
 					id: "1C1C24746A4B487D"
-					item: "kubejs:coin"
+					item: { Count: 50, id: "kubejs:coin" }
 					type: "item"
 				}
 			]
@@ -426,25 +425,23 @@
 			icon: "hostilenetworks:sim_chamber"
 			id: "56A2426E5F256F70"
 			rewards: [{
+				auto: "no_toast"
 				command: "/gamestage add @p hn"
 				elevate_perms: true
 				id: "5098FC09BA146976"
 				type: "command"
 			}]
-			subtitle: "Unlocks Hostile Neural Networks"
 			tasks: [
 				{
-					consume_items: true
 					count: 15L
 					id: "54B30E4AD884C98C"
 					item: "kubejs:coin"
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 3L
 					id: "5D23963F53E82C54"
-					item: "kubejs:premium_coin"
+					item: { Count: 3, id: "kubejs:premium_coin" }
 					type: "item"
 				}
 			]
@@ -463,65 +460,6 @@
 			title: "World of Create"
 			x: 1.5d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"07E139A89AF3B0BA"
-				"3267A72AE60FF5B3"
-			]
-			dependency_requirement: "one_completed"
-			icon: "pneumaticcraft:pressure_gauge"
-			id: "4BCEE407D8E4C110"
-			rewards: [{
-				command: "/gamestage add @p pc"
-				elevate_perms: true
-				id: "4AE4335F46602FC8"
-				type: "command"
-			}]
-			subtitle: "Unlocks PneumaticCraft"
-			tasks: [{
-				consume_items: true
-				count: 10L
-				id: "1AD2AA15694163B6"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			title: "Pressurization"
-			x: 5.5d
-			y: 4.5d
-		}
-		{
-			id: "32FCC0422652849E"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "6176411FEA095F48"
-				title: "DO NOT USE DO NOT USE DO NOT USE"
-				type: "dimension"
-			}]
-			x: 7.0d
-			y: -1.0d
-		}
-		{
-			id: "297CE3E603254144"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "6581D4E0FB8BD9CB"
-				title: "THIS TECH TREE IS OUTDATED"
-				type: "dimension"
-			}]
-			x: 8.0d
-			y: -1.0d
-		}
-		{
-			id: "6B8BCB5BB04F5B1E"
-			tasks: [{
-				dimension: "minecraft:overworld"
-				id: "3538F6A2308F4F50"
-				title: "USE THE ONE IN \"Research Tree\""
-				type: "dimension"
-			}]
-			x: 9.0d
-			y: -1.0d
 		}
 	]
 	title: "Tech Tree"
