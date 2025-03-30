@@ -11,4 +11,13 @@ ServerEvents.tags('item', e => {
 	e.add("forge:dusts/nickel", "create:crushed_raw_nickel")
 	
 	e.add("forge:raw_materials/molybdenum", "electrodynamics:oremolybdenum")
+
+	e.removeAllTagsFrom("blocksyouneed:brass_ingot")
+	e.removeAllTagsFrom("blocksyouneed:brass_block")
+	e.removeAllTagsFrom("blocksyouneed:aluminum_ingot")
+	e.removeAllTagsFrom("blocksyouneed:aluminum_block")
+	e.removeAllTagsFrom("blocksyouneed:steel_ingot")
+	e.removeAllTagsFrom("blocksyouneed:steel_block")
+	e.removeAllTagsFrom("blocksyouneed:bronze_ingot")
+	e.removeAllTagsFrom("blocksyouneed:bronze_block")
 })
