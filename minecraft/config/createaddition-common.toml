@@ -3,27 +3,27 @@
 [wires]
 	#Small Connector max output in FE/t (Energy transfer).
 	#Range: > 0
-	small_connector_max_output = 1000
+	small_connector_max_output = 2000
 	#Small Connector max input in FE/t (Energy transfer).
 	#Range: > 0
-	small_connector_max_input = 1000
+	small_connector_max_input = 2000
 	#Small Connector With Light energy consumption in FE/t.
 	#Range: > 0
-	small_light_connector_consumption = 1
+	small_light_connector_consumption = 0
 	#Large Connector max wire length in blocks.
 	#Range: 0 ~ 256
-	large_connector_wire_length = 32
+	large_connector_wire_length = 160
 	#Small Connector max wire length in blocks.
 	#Range: 0 ~ 256
-	small_connector_wire_length = 16
+	small_connector_wire_length = 48
 	#Large Connector max input in FE/t (Energy transfer).
 	#Range: > 0
-	large_connector_max_input = 5000
+	large_connector_max_input = 10000
 	#Allows blocks attached to a connector to freely pass energy to and from the connector network.
 	connector_allow_passive_io = true
 	#Large Connector max output in FE/t (Energy transfer).
 	#Range: > 0
-	large_connector_max_output = 5000
+	large_connector_max_output = 10000
 	#Ignore checking if block face can support connector.
 	connector_ignore_face_check = true
 
@@ -116,7 +116,7 @@
 [accumulator]
 	#Accumulator internal capacity per block in FE.
 	#Range: > 0
-	accumulator_capacity = 2000000
+	accumulator_capacity = 1000000
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: > 0
 	accumulator_max_output = 5000
@@ -125,10 +125,10 @@
 	accumulator_max_input = 5000
 	#Accumulator max multiblock height.
 	#Range: 1 ~ 8
-	accumulator_max_height = 5
+	accumulator_max_height = 8
 	#Accumulator max multiblock width.
 	#Range: 1 ~ 8
-	accumulator_max_width = 3
+	accumulator_max_width = 4
 
 #Rolling Mill
 [rolling_mill]

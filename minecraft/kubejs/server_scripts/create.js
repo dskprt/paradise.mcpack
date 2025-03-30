@@ -44,8 +44,13 @@ ServerEvents.recipes(e => {
 	e.remove({ id: "create_new_age:shaped/advanced_motor" })
 	e.remove({ id: "create_new_age:reinforced_motor" })
 	e.remove({ id: "create_new_age:shaped/stirling_engine" })
+
+	e.remove({ id: "createaddition:crafting/large_connector_gold" })
+	e.remove({ id: "createaddition:crafting/large_connector_electrum" })
+
+	e.shapeless("createaddition:large_connector", [ "#forge:rods/electrum", "create:andesite_alloy", "#forge:slimeballs", "redstone_torch" ])
 	
-	//e.replaceInput({ id: "recipestages:create_new_age_shaped/carbon_brushes" }, "andesite_alloy", "#forge:ingots/brass" )
+	e.replaceInput({ id: "create_new_age:shaped/carbon_brushes" }, "create:andesite_alloy", "#forge:ingots/brass" )
 	
 	e.recipes.create.mechanical_crafting("create_new_age:generator_coil", [
 		' III ',
