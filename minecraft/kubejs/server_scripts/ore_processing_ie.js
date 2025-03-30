@@ -37,6 +37,7 @@ ServerEvents.recipes(e => {
 		e.recipes.immersiveengineering.alloy(Item.of(r, 2), "kubejs:raw_" + clr + "_ingot", "kubejs:raw_" + clr + "_ingot", 60 * 20)
 		e.recipes.immersiveengineering.blast_furnace(r, "kubejs:raw_" + clr + "_ingot", "immersiveengineering:slag", 8 * 20)
 		e.recipes.immersiveengineering.arc_furnace(Item.of(r, 2), Item.of(crr, 2), "#forge:sand", "immersiveengineering:slag", 22 * 20)
+		e.recipes.immersiveengineering.arc_furnace(Item.of(r, 2), Item.of("kubejs:raw_" + clr + "_ingot", 2), "chemlib:oxygen", "immersiveengineering:slag", 18 * 20)
 		
 		// by machinery AUTOMATON
 		e.recipes.create.milling(Item.of(crr).withChance(0.9), "kubejs:clean_raw_" + clr)
