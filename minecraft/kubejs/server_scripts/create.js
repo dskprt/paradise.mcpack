@@ -47,6 +47,7 @@ ServerEvents.recipes(e => {
 
 	e.remove({ id: "createaddition:crafting/large_connector_gold" })
 	e.remove({ id: "createaddition:crafting/large_connector_electrum" })
+	e.remove({ id: "createaddition:crafting/modular_accumulator_gold" })
 
 	e.shapeless("createaddition:large_connector", [ "#forge:rods/electrum", "create:andesite_alloy", "#forge:slimeballs", "redstone_torch" ])
 	
