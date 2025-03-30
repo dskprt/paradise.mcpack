@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
 		e.recipes.immersiveengineering.crusher(oredrop, ore, [ { chance: 0.5, output: oredrop }, { chance: 0.2, output: oredrop } ])
 		
 		// crushing recipes for ingot to crushed
-		e.recipes.create.crushing([crr, Item.of(crr).withChance(0.1)], r).processingTime(8 * 20)
+		e.recipes.create.crushing([crr, Item.of(crr).withChance(0.1)], r).processingTime(20 * 20)
 		e.recipes.create.crushing(crr, "#forge:ingots/" + ir)
 		e.recipes.immersiveengineering.crusher(crr, r, [ { chance: 0.01, output: "immersiveengineering:slag" } ])
 		e.recipes.immersiveengineering.crusher(crr, "#forge:ingots/" + ir, [ { chance: 0.01, output: "immersiveengineering:slag" } ])
