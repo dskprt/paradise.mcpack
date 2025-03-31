@@ -20,4 +20,5 @@ ServerEvents.tags('item', e => {
 	e.removeAllTagsFrom("blocksyouneed_luna:steel_block")
 	e.removeAllTagsFrom("blocksyouneed_luna:bronze_ingot")
 	e.removeAllTagsFrom("blocksyouneed_luna:bronze_block")
+	e.removeAllTagsFrom("blocksyouneed_luna:coke")
 })
