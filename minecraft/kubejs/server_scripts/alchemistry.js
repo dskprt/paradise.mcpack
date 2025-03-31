@@ -99,7 +99,7 @@ ServerEvents.recipes(e => {
 	], {
 		C: "alchemistry:reactor_casing",
 		P: "piston",
-		D: "#forge:gems/diamond",
+		D: "netherite_scrap",
 		S: "#forge:sheetmetals/steel",
 		H: "immersiveengineering:heavy_engineering"
 	})
