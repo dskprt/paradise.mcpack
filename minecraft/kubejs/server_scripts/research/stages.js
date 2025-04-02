@@ -92,6 +92,7 @@ global.research_stages = {
 	"create:railway_casing": "trains",
 	"create:stock_link": "logistics_advanced",
 	"create:stock_ticker": "logistics_advanced",
+	"create:package_frogport": "logistics_advanced",
 	"computercraft:turtle_advanced": "computing_advanced",
 	"computercraft:computer_advanced": "computing_advanced",
 	"computercraft:pocket_computer_advanced": "computing_advanced",
