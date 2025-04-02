@@ -49,4 +49,6 @@ ServerEvents.recipes(e => {
 	
 	r(e, "create:zinc_ore", "create:raw_zinc", "zinc", "zinc", "create:crushed_raw_zinc", "create:zinc_ingot")
 	r(e, "creatingspace:moon_cobalt_ore", "creatingspace:raw_cobalt", "cobalt", "cobalt", "creatingspace:crushed_cobalt_ore", "creatingspace:cobalt_ingot")
+
+	e.remove({ id: "creatingspace:ressources/crushed_cobalt_ore" })
 })

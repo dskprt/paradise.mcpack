@@ -27,7 +27,7 @@
 	windmillThreshold = 804
 	#The minimum length of air current required.
 	#Range: > 1
-	windmillRequiredRange = 32
+	windmillRequiredRange = 24
 	#The minimum amount of points that must hit windmillRequiredRange.
 	#Range: > 1
 	windmillRequiredRangePoints = 128

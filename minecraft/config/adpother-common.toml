@@ -1,6 +1,6 @@
 #Global rate of emissions for all pollutants and sources on the server
 #Range: 0.0 ~ 10.0
-globalEmissionRate = 0.9
+globalEmissionRate = 1.0
 #Experience gain after replacing the filter material in a respirator or a vacuum bag
 #Range: -10 ~ 10
 filterReplacingExpGain = 0

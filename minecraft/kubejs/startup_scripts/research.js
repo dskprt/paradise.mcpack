@@ -26,6 +26,7 @@ StartupEvents.registry("item", e => {
 	createCoin("engineering_coin", "Engineering Coin")
 	createCoin("logistics_coin", "Logistics Coin")
 	createCoin("science_coin", "Science Coin")
+	createCoin("combat_coin", "Combat Coin")
 
 	e.create("unusable_item")
 	.displayName("Unknown Item")

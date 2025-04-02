@@ -73,7 +73,7 @@ ServerEvents.recipes(e => {
 	inter = "kubejs:incomplete_science_coin"
 	e.recipes.create.sequenced_assembly([
 		Item.of("kubejs:science_coin").withChance(100),
-	], "kubejs:coin", [
+	], "kubejs:engineering_coin", [
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/brass" ]),
 		e.recipes.create.deploying(inter, [ inter, "#forge:gems/diamond" ]),
 		e.recipes.create.cutting(inter, inter),
@@ -81,5 +81,17 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:dusts/fissile" ]),
 		e.recipes.create.pressing(inter, inter),
 		e.recipes.create.cutting(inter, inter),
-	]).transitionalItem(inter).loops(8)
+	]).transitionalItem(inter).loops(7)
+
+	inter = "kubejs:incomplete_combat_coin"
+	e.recipes.create.sequenced_assembly([
+		Item.of("kubejs:combat_coin").withChance(100),
+	], "kubejs:coin", [
+		e.recipes.create.deploying(inter, [ inter, "#forge:plates/brass" ]),
+		e.recipes.create.deploying(inter, [ inter, "#forge:gems/diamond" ]),
+		e.recipes.create.cutting(inter, inter),
+		e.recipes.create.deploying(inter, [ inter, "rotten_flesh" ]),
+		e.recipes.create.deploying(inter, [ inter, "experience_bottle" ]),
+		e.recipes.create.pressing(inter, inter),
+	]).transitionalItem(inter).loops(3)
 })
