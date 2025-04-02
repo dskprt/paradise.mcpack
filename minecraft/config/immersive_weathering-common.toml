@@ -73,9 +73,9 @@
 [leaf_piles]
 	leaf_piles_slow = true
 	#Range: 0.0 ~ 1.0
-	spawn_entity_from_decay = 0.3
+	spawn_entity_from_decay = 0.0
 	#Range: 1 ~ 256
-	reach = 12
+	reach = 8
 	#Range: 1 ~ 8
 	max_pile_height = 3
 	#leaves that wont spawn leaf piles
