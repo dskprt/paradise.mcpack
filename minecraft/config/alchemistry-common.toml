@@ -4,15 +4,15 @@
 	#Fluid capacity in Liquifier tank.
 	#Default: 16000 (16 buckets)
 	#Range: > 1
-	fluidCapacity = 16000
+	fluidCapacity = 8000
 	#Energy consumed per tick when Liquifier is processing
 	#Default: 50 FE
 	#Range: > 0
-	energyPerTick = 120
+	energyPerTick = 200
 	#Ticks per operation when using the Liquifier.
 	#Default: 100 ticks
 	#Range: > 1
-	ticksPerOperation = 100
+	ticksPerOperation = 240
 	#Maximum energy capacity for the Liquifier.
 	#Default: 100000 (100k FE)
 	#Range: > 0
@@ -23,11 +23,11 @@
 	#Energy consumed per tick when the Fusion multiblock is processing
 	#Default: 300 FE
 	#Range: > 0
-	energyPerTick = 3000
+	energyPerTick = 5000
 	#Ticks per operation when using the Fusion multiblock
 	#Default: 50 ticks
 	#Range: > 1
-	ticksPerOperation = 120
+	ticksPerOperation = 400
 	#Maximum energy capacity of the Fusion multiblock
 	#Default: 100000 (100k FE)
 	#Range: > 0
@@ -38,11 +38,11 @@
 	#Energy consumed per tick when Compactor is processing.
 	#Default: 50 FE
 	#Range: > 0
-	energyPerTick = 120
+	energyPerTick = 3000
 	#Ticks per operation when using the Compactor.
 	#Default: 50 ticks
 	#Range: > 1
-	ticksPerOperation = 60
+	ticksPerOperation = 600
 	#Maximum energy capacity for the Compactor.
 	#Default: 100000 (100k FE)
 	#Range: > 0
@@ -53,11 +53,11 @@
 	#Energy consumed per tick when the Fission multiblock is processing.
 	#Default: 300 FE
 	#Range: > 0
-	energyPerTick = 1000
+	energyPerTick = 3000
 	#Ticks per operation when using the Fission multiblock
 	#Default: 50 ticks
 	#Range: > 1
-	ticksPerOperation = 80
+	ticksPerOperation = 400
 	#Maximum energy capacity of the Fission multiblock.
 	#Default: 100000 (100k FE)
 	#Range: > 0
@@ -68,11 +68,11 @@
 	#Energy consumed per tick when Combiner is processing.
 	#Default: 200 FE
 	#Range: > 0
-	energyPerTick = 400
+	energyPerTick = 2000
 	#Ticks per operation when using the Combiner.
 	#Default: 50 ticks
 	#Range: > 1
-	ticksPerOperation = 60
+	ticksPerOperation = 400
 	#Maximum energy capacity for the Combiner.
 	#Default: 100000 (100k FE)
 	#Range: > 0
@@ -83,11 +83,11 @@
 	#Energy consumed per tick when Dissolver is processing.
 	#Default: 100 FE
 	#Range: > 0
-	energyPerTick = 100
+	energyPerTick = 500
 	#Ticks per operation when using the Dissolver.
 	#Default: 50 ticks
 	#Range: > 1
-	ticksPerOperation = 60
+	ticksPerOperation = 160
 	#Maximum energy capacity for the Dissolver.
 	#Default: 100000 (100k FE)
 	#Range: > 0
@@ -98,15 +98,15 @@
 	#Fluid capacity in Atomizer tank.
 	#Default: 16000 (16 buckets)
 	#Range: > 1
-	fluidCapacity = 16000
+	fluidCapacity = 4000
 	#Energy consumed per tick when Atomizer is processing.
 	#Default: 50 FE
 	#Range: > 0
-	energyPerTick = 200
+	energyPerTick = 800
 	#Ticks per operation when using the Atomizer.
 	#Default: 50 ticks
 	#Range: > 1
-	ticksPerOperation = 60
+	ticksPerOperation = 320
 	#Maximum energy capacity for the Atomizer.
 	#Default: 100000 (100k FE)
 	#Range: > 0

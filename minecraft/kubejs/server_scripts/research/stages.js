@@ -11,6 +11,7 @@ global.research_stages = {
 		]
 	},
 	"chemlib:uranium_ingot": "uranium_processing",
+	"nuclearscience:yellowcake": "uranium_processing",
 	"nuclearscience:msrfuelpreprocessor": "uranium_processing",
 	"nuclearscience:nuclearboiler": "uranium_processing",
 	"nuclearscience:gascentrifuge": "uranium_processing",
@@ -39,9 +40,9 @@ global.research_stages = {
 	"create_new_age:fluxuated_magnetite": "newage_advanced",
 	"create_new_age:netherite_magnet": "newage_advanced",
 	"create_new_age:overcharged_diamond": "newage_advanced",
-	"createadditions:large_connector": "newage_advanced",
-	"createadditions:portable_energy_interface": "newage_advanced",
-	"createadditions:digital_adapter": "newage_advanced",
+	"createaddition:large_connector": "newage_advanced",
+	"createaddition:portable_energy_interface": "newage_advanced",
+	"createaddition:digital_adapter": "newage_advanced",
 	"create_new_age": {
 		stage: "newage",
 		exceptions: []

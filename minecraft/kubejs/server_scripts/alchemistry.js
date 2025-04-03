@@ -6,73 +6,69 @@ ServerEvents.recipes(e => {
 	e.remove({ id: "alchemistry:liquifier" })
 	e.remove({ id: "alchemistry:fission_chamber_controller" })
 	e.remove({ id: "alchemistry:fusion_chamber_controller" })
+	e.remove({ id: "alchemistry:fission_core" })
+	e.remove({ id: "alchemistry:fusion_core" })
 	
 	e.recipes.create.mechanical_crafting("alchemistry:atomizer", [
-		' SPS ',
+		' TPT ',
 		'SGGGS',
 		'CGRGC',
 		'SSSSS',
 		'E L E'
 	], {
+		T: "#forge:storage_blocks/steel",
 		S: "#forge:ingots/steel",
 		G: "#forge:ingots/gold",
-		P: "#forge:plates/steel",
 		C: "cauldron",
+		P: "piston",
 		R: "#forge:dusts/redstone",
 		E: "#forge:ingots/electrum",
-		L: "immersiveengineering:light_engineering"
-	})
-
-	e.recipes.create.mechanical_crafting("alchemistry:compactor", [
-		' P P ',
-		'SIPIS',
-		'SIBIS',
-		'SIIIS',
-		'E L E'
-	], {
-		S: "#forge:ingots/steel",
-		I: "#forge:storage_blocks/iron",
-		P: "#forge:plates/steel",
-		C: "cauldron",
-		R: "#forge:dusts/redstone",
-		E: "#forge:ingots/electrum",
-		B: "#forge:buckets/empty",
 		L: "immersiveengineering:light_engineering"
 	})
 
 	e.recipes.create.mechanical_crafting("alchemistry:combiner", [
+		' T T ',
+		'SIPIS',
+		'SIBIS',
+		'SIGIS',
+		'E L E'
+	], {
+		T: "#forge:storage_blocks/steel",
+		S: "#forge:ingots/steel",
+		I: "#forge:storage_blocks/iron",
+		P: "#forge:plates/steel",
+		E: "#forge:ingots/electrum",
+		B: "#forge:buckets/empty",
+		L: "immersiveengineering:light_engineering",
+		G: "#forge:plates/gold"
+	})
+
+	e.recipes.create.mechanical_crafting("alchemistry:compactor", [
 		' OOO ',
 		'SDDDS',
 		'SOLOS',
 		'EPPPE'
 	], {
 		S: "#forge:ingots/steel",
-		G: "#forge:ingots/gold",
 		P: "piston",
-		C: "cauldron",
-		R: "#forge:dusts/redstone",
 		E: "#forge:ingots/electrum",
 		O: "obsidian",
 		D: "#forge:gems/diamond",
-		L: "immersiveengineering:light_engineering"
+		L: "immersiveengineering:heavy_engineering"
 	})
 
-	e.recipes.create.mechanical_crafting("alchemistry:combiner", [
+	e.recipes.create.mechanical_crafting("alchemistry:dissolver", [
 		' MMM ',
 		'SDDDS',
 		'SMLMS',
 		'SEPES'
 	], {
 		S: "#forge:ingots/steel",
-		G: "#forge:ingots/gold",
 		P: "piston",
-		C: "cauldron",
-		R: "#forge:dusts/redstone",
 		E: "#forge:ingots/electrum",
-		O: "obsidian",
 		D: "#forge:gems/diamond",
 		M: "magma_block",
-		L: "immersiveengineering:light_engineering"
+		L: "immersiveengineering:heavy_engineering"
 	})
 
 	e.recipes.create.mechanical_crafting("alchemistry:liquifier", [
@@ -80,14 +76,11 @@ ServerEvents.recipes(e => {
 		'GR RG',
 		'EPCPE'
 	], {
-		S: "#forge:ingots/steel",
 		G: "#forge:ingots/gold",
 		P: "piston",
 		C: "cauldron",
 		R: "#forge:dusts/redstone",
 		E: "#forge:ingots/electrum",
-		O: "obsidian",
-		D: "#forge:gems/diamond",
 		W: "#forge:wool"
 	})
 
@@ -115,5 +108,23 @@ ServerEvents.recipes(e => {
 		N: "nether_star",
 		S: "#forge:sheetmetals/steel",
 		H: "immersiveengineering:heavy_engineering"
+	})
+
+	e.shaped("alchemistry:fission_core", [
+		"YRY",
+		"YRY",
+		"YRY"
+	], {
+		Y: "#forge:storage_blocks/yttrium",
+		R: "#forge:rods/blaze"
+	})
+
+	e.shaped("alchemistry:fusion_core", [
+		"YRY",
+		"YRY",
+		"YRY"
+	], {
+		Y: "#forge:storage_blocks/tungsten",
+		R: "#forge:ingots/netherite"
 	})
 })

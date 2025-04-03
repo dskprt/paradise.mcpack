@@ -1,4 +1,5 @@
 {
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "new_research_tree"
@@ -17,13 +18,10 @@
 			}]
 			title: "Engineering Basics"
 			x: 0.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
-			dependencies: [
-				"1538AC65B85D6871"
-				"7EA007C515454CF5"
-			]
+			dependencies: ["7EA007C515454CF5"]
 			icon: "minecraft:raw_iron"
 			id: "3DFD5C2B819D8537"
 			rewards: [{
@@ -43,16 +41,14 @@
 				type: "observation"
 			}]
 			title: "Basic Ore Processing"
-			x: 0.0d
+			x: 2.0d
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"5D6812C858DDC286"
-				"7EA007C515454CF5"
-			]
+			dependencies: ["7EA007C515454CF5"]
 			id: "3DD6A20B5B419499"
 			tasks: [{
+				consume_items: false
 				id: "524F4F89E835CEBC"
 				item: "create:andesite_alloy"
 				type: "item"
@@ -62,10 +58,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"3494E9FF2991A696"
-				"3DD6A20B5B419499"
-			]
+			dependencies: ["3DD6A20B5B419499"]
 			id: "235EAC4B6E6A7328"
 			tasks: [{
 				consume_items: false
@@ -78,10 +71,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"732D47F2CAB2C43A"
-				"235EAC4B6E6A7328"
-			]
+			dependencies: ["235EAC4B6E6A7328"]
 			description: [
 				"{image:create_new_age:item/blank_circuit width:32 height:32 align:center}"
 				"{image:create_new_age:item/copper_circuit width:32 height:32 align:center}"
@@ -107,11 +97,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"3494E9FF2991A696"
-				"732D47F2CAB2C43A"
-				"235EAC4B6E6A7328"
-			]
+			dependencies: ["235EAC4B6E6A7328"]
 			icon: "immersiveengineering:heavy_engineering"
 			id: "122CB7E13FC6C961"
 			rewards: [{
@@ -122,9 +108,10 @@
 			}]
 			subtitle: "Unlocks recipes for Immersive Engineering Heavy, Light, and Engineering blocks and Electrum"
 			tasks: [{
+				consume_items: true
 				count: 5L
 				id: "3401EA6C72CEFBB0"
-				item: { Count: 5, id: "kubejs:coin" }
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			title: "Advanced Engineering"
@@ -132,13 +119,10 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"151A93F9441BB58F"
-				"5D6812C858DDC286"
-				"3DFD5C2B819D8537"
-			]
+			dependencies: ["3DFD5C2B819D8537"]
 			id: "261EAB3DF0267E94"
 			tasks: [{
+				consume_items: false
 				id: "01F6FE2542E9A23B"
 				item: "immersiveengineering:mold_plate"
 				type: "item"
@@ -148,44 +132,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"4CF2767AFAFA207D"
-				"261EAB3DF0267E94"
-			]
-			icon: "alchemistry:atomizer"
-			id: "7C358ED1D239283D"
-			min_required_dependencies: 2
-			rewards: [{
-				command: "/kubejs stages add @p alchemistry"
-				elevate_perms: true
-				id: "7D438A4782A81BAD"
-				type: "command"
-			}]
-			subtitle: "Unlocks Alchemistry"
-			tasks: [
-				{
-					id: "371F3F8FDFF3ACFB"
-					max_input: 1000L
-					type: "forge_energy"
-					value: 10000L
-				}
-				{
-					consume_items: true
-					count: 3L
-					id: "13C5C66403976979"
-					item: "kubejs:premium_coin"
-					type: "item"
-				}
-			]
-			title: "Alchemistry"
-			x: 3.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"151A93F9441BB58F"
-				"122CB7E13FC6C961"
-			]
+			dependencies: ["122CB7E13FC6C961"]
 			icon: "create:brass_ingot"
 			id: "3D7F8A75FC4EB7A7"
 			rewards: [{
@@ -210,8 +157,6 @@
 		}
 		{
 			dependencies: [
-				"3219942A7314D207"
-				"732D47F2CAB2C43A"
 				"3D7F8A75FC4EB7A7"
 				"235EAC4B6E6A7328"
 			]
@@ -237,9 +182,10 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 12L
 					id: "665053114C9E7830"
-					item: { Count: 15, id: "kubejs:coin" }
+					item: "kubejs:coin"
 					type: "item"
 				}
 			]
@@ -248,10 +194,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: [
-				"732D47F2CAB2C43A"
-				"235EAC4B6E6A7328"
-			]
+			dependencies: ["235EAC4B6E6A7328"]
 			icon: "immersiveengineering:dynamo"
 			id: "332FFE10D6085506"
 			rewards: [{
@@ -262,9 +205,10 @@
 			}]
 			subtitle: "Unlocks the Dynamo, Watermill, Windmill, and LV components from Immersive Engineering"
 			tasks: [{
+				consume_items: true
 				count: 10L
 				id: "177FA10AF42732E7"
-				item: { Count: 10, id: "kubejs:coin" }
+				item: "kubejs:coin"
 				type: "item"
 			}]
 			title: "Basic Electricity"
@@ -283,9 +227,10 @@
 			}]
 			subtitle: "Unlocks CC: Tweaked"
 			tasks: [{
+				consume_items: true
 				count: 5L
 				id: "3F48CC27E7C417AB"
-				item: { Count: 5, id: "kubejs:electronics_coin" }
+				item: "kubejs:electronics_coin"
 				type: "item"
 			}]
 			title: "Computing"
@@ -303,9 +248,10 @@
 			}]
 			subtitle: "Unlocks advanced computers"
 			tasks: [{
+				consume_items: true
 				count: 5L
 				id: "0314F2B281C41630"
-				item: { Count: 5, id: "kubejs:electronics_coin" }
+				item: "kubejs:electronics_coin"
 				type: "item"
 			}]
 			title: "Advanced Computing"
@@ -313,7 +259,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["7C358ED1D239283D"]
+			dependencies: ["690BE5234CF884AB"]
 			icon: "alchemistry:fusion_chamber_controller"
 			id: "44F41A5B214D1576"
 			rewards: [{
@@ -323,18 +269,27 @@
 				type: "command"
 			}]
 			subtitle: "Unlocks Fusion Core and Fusion Chamber Controller"
-			tasks: [{
-				count: 10L
-				id: "3B7D84F6A72435B1"
-				item: "kubejs:chemical_coin"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "3B7D84F6A72435B1"
+					item: "kubejs:chemical_coin"
+					type: "item"
+				}
+				{
+					id: "5B8BA4AA8E426F2C"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 100000L
+				}
+			]
 			title: "Chemical Fusion"
 			x: 4.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["7C358ED1D239283D"]
+			dependencies: ["690BE5234CF884AB"]
 			icon: "alchemistry:fission_chamber_controller"
 			id: "4EEDF4F89E64B15D"
 			rewards: [{
@@ -344,12 +299,21 @@
 				type: "command"
 			}]
 			subtitle: "Unlocks Fission Core and Fission Chamber Controller"
-			tasks: [{
-				count: 10L
-				id: "2B9C1C428A8D6248"
-				item: { Count: 15, id: "kubejs:chemical_coin" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "2B9C1C428A8D6248"
+					item: "kubejs:chemical_coin"
+					type: "item"
+				}
+				{
+					id: "09CD66D5C046B587"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 100000L
+				}
+			]
 			title: "Chemical Fission"
 			x: 2.5d
 			y: -6.0d
@@ -365,15 +329,24 @@
 				type: "command"
 			}]
 			subtitle: "Unlocks XNet"
-			tasks: [{
-				count: 10L
-				id: "0C741C8F373EFF1E"
-				item: { Count: 10, id: "kubejs:electronics_coin" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "0C741C8F373EFF1E"
+					item: "kubejs:electronics_coin"
+					type: "item"
+				}
+				{
+					id: "460F450ED0895AF0"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 500000L
+				}
+			]
 			title: "Networking"
 			x: 2.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["70DE58EA866184D0"]
@@ -386,21 +359,41 @@
 				type: "command"
 			}]
 			subtitle: "Unlocks Hostile Neural Networks"
-			tasks: [{
-				count: 20L
-				id: "23EC7235E35468F1"
-				item: { Count: 20, id: "kubejs:electronics_coin" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 10L
+					id: "23EC7235E35468F1"
+					item: "kubejs:electronics_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "6FA96A5F4AA2E6F0"
+					item: "kubejs:combat_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "3282A696E68FB196"
+					item: "kubejs:engineering_coin"
+					type: "item"
+				}
+				{
+					id: "4D187210CC2DAAAF"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 1000000L
+				}
+			]
 			title: "Neural Networks"
 			x: 3.5d
 			y: 5.5d
 		}
 		{
-			dependencies: [
-				"3267A72AE60FF5B3"
-				"3245BB1CF3A3B2AC"
-			]
+			dependencies: ["3245BB1CF3A3B2AC"]
 			icon: "create_new_age:reinforced_motor"
 			id: "3DD9610D7E15B198"
 			rewards: [{
@@ -419,15 +412,23 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "60A2B126F4887080"
 					item: "create_new_age:overcharged_iron"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 5L
 					id: "1E85705A83451F2E"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "54392357A2FAF325"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 500000L
 				}
 			]
 			title: "Advanced Electricity 2"
@@ -436,8 +437,6 @@
 		}
 		{
 			dependencies: [
-				"07E139A89AF3B0BA"
-				"151A93F9441BB58F"
 				"332FFE10D6085506"
 				"122CB7E13FC6C961"
 			]
@@ -459,10 +458,17 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 2L
 					id: "2A68B8B021D3D72D"
-					item: { Count: 2, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "76FBFA708F43AD6A"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 100000L
 				}
 			]
 			title: "Advanced Electricity"
@@ -482,15 +488,17 @@
 			subtitle: "Unlocks Create: Diesel Generators"
 			tasks: [
 				{
+					consume_items: true
 					count: 8L
 					id: "12E5924717AE3F8F"
-					item: { Count: 8, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 3L
 					id: "06844FB7AC387E6E"
-					item: { Count: 3, id: "create_new_age:overcharged_diamond" }
+					item: "create_new_age:overcharged_diamond"
 					type: "item"
 				}
 			]
@@ -511,15 +519,17 @@
 			subtitle: "Unlocks the Modular Diesel Engine, Huge Diesel Engine, and Chemical Turret"
 			tasks: [
 				{
+					consume_items: true
 					count: 2L
 					id: "43B9A21DB523CB75"
-					item: { Count: 2, id: "kubejs:electronics_coin" }
+					item: "kubejs:electronics_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "798C342EA6797ADC"
-					item: { Count: 10, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 			]
@@ -530,10 +540,11 @@
 		{
 			dependencies: [
 				"09731DDF0AA8BB14"
-				"1FC31A63E69D1167"
+				"353B53F250748709"
 			]
 			icon: "kubejs:pcb"
 			id: "24015AFEE27AD56A"
+			min_required_dependencies: 1
 			rewards: [{
 				command: "/kubejs stages add @p pcbs"
 				elevate_perms: true
@@ -543,15 +554,17 @@
 			subtitle: "Unlocks PCB recipes"
 			tasks: [
 				{
+					consume_items: true
 					count: 10L
 					id: "4A276E847E5F6292"
-					item: { Count: 10, id: "kubejs:electronics_coin" }
+					item: "kubejs:electronics_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "56C3F0DFBFB4A416"
-					item: { Count: 10, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 			]
@@ -571,17 +584,21 @@
 			}]
 			subtitle: "Unlocks PSI"
 			tasks: [{
+				consume_items: true
 				count: 32L
 				id: "562CCD0218206970"
-				item: { Count: 32, id: "minecraft:amethyst_shard" }
+				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
 			title: "Magical Technology"
-			x: 5.0d
-			y: 3.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["24015AFEE27AD56A"]
+			dependencies: [
+				"24015AFEE27AD56A"
+				"1FC31A63E69D1167"
+			]
 			icon: "electrodynamics:wireinsulatedtinblack"
 			id: "403FA9557A104CE7"
 			rewards: [{
@@ -593,16 +610,24 @@
 			subtitle: "Unlocks Electrodynamics"
 			tasks: [
 				{
+					consume_items: true
 					count: 20L
 					id: "564297B4F6DD9234"
-					item: { Count: 20, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 15L
 					id: "4D1274F0EB5304DC"
-					item: { Count: 15, id: "kubejs:electronics_coin" }
+					item: "kubejs:electronics_coin"
 					type: "item"
+				}
+				{
+					id: "6BF7654183F99C95"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 5000000L
 				}
 			]
 			title: "Electrodynamics"
@@ -622,21 +647,23 @@
 			subtitle: "Unlocks Advanced Circuits"
 			tasks: [
 				{
+					consume_items: true
 					count: 30L
 					id: "40F7D2D4CAACC6E9"
-					item: { Count: 30, id: "kubejs:electronics_coin" }
+					item: "kubejs:electronics_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 5L
 					id: "77AFF5A698D48B3B"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 			]
 			title: "Advanced Electronics"
 			x: 15.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["236E82B94605A0CB"]
@@ -651,21 +678,23 @@
 			subtitle: "Unlocks Elite and Ultimate Circuits"
 			tasks: [
 				{
+					consume_items: true
 					count: 50L
 					id: "1ABC80675E8C3897"
-					item: { Count: 50, id: "kubejs:electronics_coin" }
+					item: "kubejs:electronics_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "6CE46DDD5FCAA990"
-					item: { Count: 10, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 			]
 			title: "Extra Electronics"
 			x: 16.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6CA9E9ED3E36AC84"]
@@ -680,15 +709,17 @@
 			subtitle: "Unlocks the MSR Fuel Preprocessor, Nuclear Boiler, Gas Centrifuge, Fissile Dust, and Uranium"
 			tasks: [
 				{
+					consume_items: true
 					count: 5L
 					id: "4D30529347021B9F"
-					item: { Count: 5, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 20L
 					id: "7221C0AD447500D5"
-					item: { Count: 20, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 			]
@@ -709,16 +740,24 @@
 			subtitle: "Unlocks the Control Rod Assembly, Fission Reactor Core, and Fuel Rods"
 			tasks: [
 				{
+					consume_items: true
 					count: 50L
 					id: "1A8389672DE3176B"
-					item: { Count: 10, id: "kubejs:science_coin" }
+					item: "kubejs:science_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 50L
 					id: "0774AFB4A175E258"
-					item: { Count: 50, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "7366AEE1FDA467E1"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 200000000L
 				}
 			]
 			title: "Nuclear Fission"
@@ -738,15 +777,17 @@
 			subtitle: "Unlocks Plutonium"
 			tasks: [
 				{
+					consume_items: true
 					count: 5L
 					id: "22B2FF8285CE9715"
-					item: { Count: 5, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 15L
 					id: "26037E9CEF1B2C21"
-					item: { Count: 15, id: "kubejs:science_coin" }
+					item: "kubejs:science_coin"
 					type: "item"
 				}
 			]
@@ -767,16 +808,24 @@
 			subtitle: "Unlocks the MSR Reactor Core"
 			tasks: [
 				{
+					consume_items: true
 					count: 10L
 					id: "021D118931DCFD37"
-					item: { Count: 20, id: "kubejs:science_coin" }
+					item: "kubejs:science_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 5L
 					id: "7931F955BF5E0072"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "0B6C666D08B6B274"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 1000000000L
 				}
 			]
 			title: "Molten Salt Reactor"
@@ -796,16 +845,24 @@
 			subtitle: "Unlocks the Fusion Reactor Core"
 			tasks: [
 				{
+					consume_items: true
 					count: 200L
 					id: "70269F35DF329077"
-					item: { Count: 200, id: "kubejs:science_coin" }
+					item: "kubejs:science_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 100L
 					id: "491B479565523DB0"
-					item: { Count: 100, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "19B0B9A1D1FDE7D4"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 50000000000L
 				}
 			]
 			title: "Nuclear Fusion"
@@ -828,16 +885,24 @@
 			subtitle: "Unlocks Nuclear Science"
 			tasks: [
 				{
+					consume_items: true
 					count: 20L
 					id: "51F7126AFE182C6A"
-					item: { Count: 20, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 100L
 					id: "6151DCC482D52631"
-					item: { Count: 100, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "4005153AD2FB5C22"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 100000000L
 				}
 			]
 			title: "Nuclear Science"
@@ -846,8 +911,8 @@
 		}
 		{
 			dependencies: [
-				"332FFE10D6085506"
-				"3245BB1CF3A3B2AC"
+				"3DD9610D7E15B198"
+				"24B7215434012F1C"
 			]
 			dependency_requirement: "one_completed"
 			icon: "pneumaticcraft:pneumatic_cylinder"
@@ -860,17 +925,21 @@
 			}]
 			subtitle: "Unlocks PneumaticCraft"
 			tasks: [{
+				consume_items: true
 				count: 5L
 				id: "0F64F2B2DE29DCD7"
-				item: { Count: 5, id: "kubejs:engineering_coin" }
+				item: "kubejs:engineering_coin"
 				type: "item"
 			}]
 			title: "Pneumatic Power"
-			x: 6.5d
-			y: 2.0d
+			x: 9.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["403FA9557A104CE7"]
+			dependencies: [
+				"403FA9557A104CE7"
+				"70BBB4BB7452A1BA"
+			]
 			icon: "creatingspace:small_rocket_engine"
 			id: "3433C4B8BEF68824"
 			rewards: [{
@@ -882,27 +951,30 @@
 			subtitle: "Unlocks Creating Space"
 			tasks: [
 				{
+					consume_items: true
 					count: 5L
 					id: "20FB9111B5DFF9B8"
-					item: { Count: 5, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 30L
 					id: "185C265AC2438015"
-					item: { Count: 30, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "21380A1A542037E0"
-					item: { Count: 10, id: "kubejs:electronics_coin" }
+					item: "kubejs:electronics_coin"
 					type: "item"
 				}
 			]
 			title: "Space Age"
-			x: 14.5d
-			y: -0.5d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3433C4B8BEF68824"]
@@ -916,14 +988,15 @@
 			}]
 			subtitle: "Unlocks the Big Rocket Engine, Advanced Spacesuit, Netherite Oxygen Backtank, and Rocket Generator"
 			tasks: [{
+				consume_items: true
 				count: 10L
 				id: "5250FA0E55A35E85"
-				item: { Count: 10, id: "kubejs:engineering_coin" }
+				item: "kubejs:engineering_coin"
 				type: "item"
 			}]
 			title: "Advanced Space Technologies"
 			x: 14.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3DD9610D7E15B198"]
@@ -938,15 +1011,17 @@
 			subtitle: "Unlocks Create Ore Excavation"
 			tasks: [
 				{
+					consume_items: true
 					count: 5L
 					id: "21B8772BCF67243F"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 3L
 					id: "7487F2A7A78E352D"
-					item: { Count: 3, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
 					type: "item"
 				}
 			]
@@ -971,12 +1046,22 @@
 				type: "command"
 			}]
 			subtitle: "Unlocks ammo recipes from TACZ"
-			tasks: [{
-				count: 20L
-				id: "7E46EB60B09287FE"
-				item: { Count: 20, id: "kubejs:engineering_coin" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 20L
+					id: "7E46EB60B09287FE"
+					item: "kubejs:engineering_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "067A07F216213D07"
+					item: "kubejs:combat_coin"
+					type: "item"
+				}
+			]
 			title: "Gun Manufacturing"
 			x: 14.5d
 			y: 4.0d
@@ -994,15 +1079,24 @@
 			subtitle: "Unlocks the gun smithing table"
 			tasks: [
 				{
+					consume_items: true
 					count: 5L
 					id: "3DF57A49255908AC"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "165C7542918A3833"
-					item: { Count: 10, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "5D7E581172C5EEFD"
+					item: "kubejs:combat_coin"
 					type: "item"
 				}
 			]
@@ -1022,14 +1116,15 @@
 			}]
 			subtitle: "Unlocks Dimensional Item Cannons"
 			tasks: [{
+				consume_items: true
 				count: 15L
 				id: "7A1171B84917B054"
-				item: { Count: 15, id: "kubejs:engineering_coin" }
+				item: "kubejs:engineering_coin"
 				type: "item"
 			}]
 			title: "Interdimensional Item Transport"
-			x: 13.5d
-			y: -1.5d
+			x: 15.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3D7F8A75FC4EB7A7"]
@@ -1048,21 +1143,29 @@
 			subtitle: "Unlocks SecurityCraft"
 			tasks: [
 				{
+					consume_items: true
 					count: 2L
 					id: "33F8AEE17D942447"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
-					count: 4L
+					consume_items: true
+					count: 3L
 					id: "61355A4873BE1224"
 					item: "kubejs:premium_coin"
 					type: "item"
 				}
+				{
+					consume_items: true
+					id: "1B19733B7D53DCBA"
+					item: "kubejs:combat_coin"
+					type: "item"
+				}
 			]
 			title: "Security"
-			x: 6.5d
-			y: -3.0d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3ACAB39075A8A305"]
@@ -1077,16 +1180,24 @@
 			subtitle: "Unlocks the Particle Injector"
 			tasks: [
 				{
+					consume_items: true
 					count: 500L
 					id: "531A1A1AC1C53DB7"
-					item: { Count: 500, id: "kubejs:science_coin" }
+					item: "kubejs:science_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 300L
 					id: "3446C757716BCEF0"
-					item: { Count: 300, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
+				}
+				{
+					id: "5FF62A561A59E283"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 500000000000L
 				}
 			]
 			title: "Particle Accelerators"
@@ -1106,21 +1217,31 @@
 			subtitle: "Unlocks Antimatter and Darkmatter Explosives, and ICBM"
 			tasks: [
 				{
+					consume_items: true
 					count: 10L
 					id: "79ECD4985FB467A4"
-					item: { Count: 10, id: "kubejs:science_coin" }
+					item: "kubejs:science_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 50L
 					id: "7205305567466FA1"
-					item: { Count: 50, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 30L
 					id: "6FB4D97EE046EBAE"
-					item: { Count: 30, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 40L
+					id: "022AECC069A46041"
+					item: "kubejs:combat_coin"
 					type: "item"
 				}
 			]
@@ -1158,6 +1279,12 @@
 					item: { Count: 20, id: "kubejs:premium_coin" }
 					type: "item"
 				}
+				{
+					count: 25L
+					id: "0758DE6D6DD32D41"
+					item: { Count: 15, id: "kubejs:combat_coin" }
+					type: "item"
+				}
 			]
 			title: "Nuclear Explosives"
 			x: 20.0d
@@ -1182,15 +1309,16 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 7L
 					id: "65E33531B2736BCD"
-					item: { Count: 7, id: "kubejs:coin" }
+					item: "kubejs:coin"
 					type: "item"
 				}
 			]
 			title: "Aeronautics"
-			x: 5.5d
-			y: -3.0d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["05F109191E6958D3"]
@@ -1211,42 +1339,45 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 3L
 					id: "63D5FA8880090A5E"
-					item: { Count: 5, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 			]
 			title: "Advanced Aeronautics"
-			x: 5.5d
-			y: -4.0d
+			x: 5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3DD9610D7E15B198"]
-			icon: "refinedstorage:1k_storage_disk"
+			icon: "create:track"
 			id: "4C8F877EC0271DA7"
 			rewards: [{
-				command: "/kubejs stages add @p storage_advanced"
+				command: "/kubejs stages add @p trains"
 				elevate_perms: true
 				id: "269C3CA80C943C41"
 				type: "command"
 			}]
-			subtitle: "Unlocks Refined Storage"
+			subtitle: "Unlocks Create Trains"
 			tasks: [
 				{
+					consume_items: true
 					count: 3L
 					id: "18B29DC425C3DD00"
-					item: { Count: 3, id: "kubejs:premium_coin" }
+					item: "kubejs:premium_coin"
 					type: "item"
 				}
 				{
-					count: 5L
+					consume_items: true
+					count: 4L
 					id: "4A1939B0734A0B21"
-					item: { Count: 5, id: "kubejs:logistics_coin" }
+					item: "kubejs:logistics_coin"
 					type: "item"
 				}
 			]
-			title: "Advanced Storage"
+			title: "Trains"
 			x: 8.5d
 			y: -1.5d
 		}
@@ -1262,9 +1393,10 @@
 			}]
 			subtitle: "Unlocks the Diamond and Netherite drills"
 			tasks: [{
+				consume_items: true
 				count: 20L
 				id: "44D6B57C8209DB77"
-				item: { Count: 20, id: "kubejs:engineering_coin" }
+				item: "kubejs:engineering_coin"
 				type: "item"
 			}]
 			title: "Advanced Ore Excavation"
@@ -1284,21 +1416,162 @@
 			subtitle: "Unlocks Ballistix"
 			tasks: [
 				{
+					consume_items: true
 					count: 20L
 					id: "3210B197ED1B3DE5"
-					item: { Count: 20, id: "kubejs:engineering_coin" }
+					item: "kubejs:engineering_coin"
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 20L
 					id: "1D93B04B168CEED6"
 					item: "kubejs:premium_coin"
 					type: "item"
 				}
+				{
+					consume_items: true
+					count: 15L
+					id: "5E3AB24D323A5B55"
+					item: "kubejs:combat_coin"
+					type: "item"
+				}
 			]
 			title: "Explosives"
 			x: 15.5d
-			y: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["70BBB4BB7452A1BA"]
+			icon: "computercraft:printer"
+			id: "477F159CFF8D3DB1"
+			rewards: [{
+				command: "/kubejs stages add @p computing"
+				elevate_perms: true
+				id: "5E27DF435E139DC6"
+				type: "command"
+			}]
+			subtitle: "Unlocks CC: Tweaked peripherials"
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "7BA36BF55306F028"
+				item: "kubejs:electronics_coin"
+				type: "item"
+			}]
+			title: "Computer Peripherials"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D7F8A75FC4EB7A7"]
+			icon: "create:stock_ticker"
+			id: "48BE18D320AFCA63"
+			rewards: [{
+				command: "/kubejs stages add @p logistics_advanced"
+				elevate_perms: true
+				id: "07FC67308FAF0B8D"
+				type: "command"
+			}]
+			subtitle: "Unlocks the Stock Link and Stock Ticker from Create"
+			tasks: [
+				{
+					consume_items: true
+					id: "6E8A35DC9596F7F9"
+					item: { Count: 2, id: "kubejs:logistics_coin" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "255D8F36E82F51B7"
+					item: "kubejs:coin"
+					type: "item"
+				}
+			]
+			title: "Advanced Logistics"
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3433C4B8BEF68824"]
+			icon: "blocksyouneed_luna:globe_earth"
+			id: "283B0FBA660D8797"
+			tasks: [{
+				dimension: "creatingspace:earth_orbit"
+				id: "177AC6321777CBF8"
+				title: "Earth Orbit"
+				type: "dimension"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3433C4B8BEF68824"]
+			icon: "blocksyouneed_luna:globe_luna"
+			id: "4D9C3107D4D891E7"
+			tasks: [{
+				dimension: "creatingspace:the_moon"
+				id: "097033794AE126C9"
+				title: "The Moon"
+				type: "dimension"
+			}]
+			x: 13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3433C4B8BEF68824"]
+			icon: "blocksyouneed_luna:globe_mars"
+			id: "125B7B948919F19D"
+			tasks: [{
+				dimension: "creatingspace:mars"
+				id: "557F36148A5BD3E7"
+				type: "dimension"
+			}]
+			title: "Mars"
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3433C4B8BEF68824"]
+			icon: "blocksyouneed_luna:globe_venus"
+			id: "07C52792D651015E"
+			tasks: [{
+				dimension: "creatingspace:venus"
+				id: "6E7D4684AC0B4AC9"
+				title: "Venus"
+				type: "dimension"
+			}]
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["261EAB3DF0267E94"]
+			icon: "alchemistry:atomizer"
+			id: "690BE5234CF884AB"
+			rewards: [{
+				command: "/kubejs stages add @p alchemistry"
+				elevate_perms: true
+				id: "52285847A2A5A7B0"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "75AEBAD7EBAC7AE1"
+					item: { Count: 4, id: "kubejs:premium_coin" }
+					type: "item"
+				}
+				{
+					id: "036697F9A244567B"
+					max_input: 1000L
+					type: "forge_energy"
+					value: 50000L
+				}
+			]
+			title: "Alchemistry"
+			x: 3.5d
+			y: -5.0d
 		}
 	]
 	title: "Research Tree"
