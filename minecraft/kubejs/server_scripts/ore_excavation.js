@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
 	}
 
 	// earth
-	createDeposit("iron_earth", "Iron", "minecraft:raw_iron", [ 80, 8, 48375847 ], "forge:is_overworld", 50 * 20, 64, "createoreexcavation:drill")
+	createDeposit("coal_earth", "Coal", "minecraft:coal", [ 50, 4, 48375847 ], "forge:is_overworld", 30 * 20, 64, "createoreexcavation:drill")
 	createDeposit("uranium_earth", "Uraninite", "electrodynamics:raworeuranium", [ 100, 32, 43298295 ], "forge:is_overworld", 70 * 20, 96, "createoreexcavation:diamond_drill")
 	createDeposit("diamond_earth", "Diamond", "createoreexcavation:raw_diamond", [ 100, 64, 5849845 ], "forge:is_cold", 60 * 20, 256, "createoreexcavation:netherite_drill")
 
