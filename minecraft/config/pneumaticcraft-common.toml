@@ -21,7 +21,7 @@
 	bandage_use_time = 40
 	#Health points restored on bandage use (1 health = half a heart).
 	#Range: 1.0 ~ 1.7976931348623157E308
-	bandage_health_restored = 6.0
+	bandage_health_restored = 8.0
 
 [Worldgen]
 	#Oil worldgen whitelist by dimension ID: add dimension ID's to this list if you want oil lake worldgen to happen ONLY in those dimensions. You can wildcard the path; e.g 'modid:*' whitelists ALL dimensions of namespace 'modid'. If this is empty, it is ignored, and 'oil_world_gen_dimension_blacklist' will be checked instead.

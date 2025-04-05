@@ -9,7 +9,7 @@
 	small_connector_max_input = 2000
 	#Small Connector With Light energy consumption in FE/t.
 	#Range: > 0
-	small_light_connector_consumption = 0
+	small_light_connector_consumption = 1
 	#Large Connector max wire length in blocks.
 	#Range: 0 ~ 256
 	large_connector_wire_length = 160
@@ -116,7 +116,7 @@
 [accumulator]
 	#Accumulator internal capacity per block in FE.
 	#Range: > 0
-	accumulator_capacity = 1000000
+	accumulator_capacity = 500000
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: > 0
 	accumulator_max_output = 5000
@@ -125,10 +125,10 @@
 	accumulator_max_input = 5000
 	#Accumulator max multiblock height.
 	#Range: 1 ~ 8
-	accumulator_max_height = 8
+	accumulator_max_height = 6
 	#Accumulator max multiblock width.
 	#Range: 1 ~ 8
-	accumulator_max_width = 4
+	accumulator_max_width = 3
 
 #Rolling Mill
 [rolling_mill]
