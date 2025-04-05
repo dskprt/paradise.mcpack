@@ -75,13 +75,14 @@ ServerEvents.recipes(e => {
 		Item.of("kubejs:science_coin").withChance(100),
 	], "kubejs:engineering_coin", [
 		e.recipes.create.deploying(inter, [ inter, "#forge:dusts/fissile" ]),
-		e.recipes.create.deploying(inter, [ inter, "#forge:gems/diamond" ]),
+		e.recipes.create.deploying(inter, [ inter, "#forge:cells/deuterium" ]),
+		e.recipes.create.deploying(inter, [ inter, "create_new_age:overcharged_diamond" ]),
 		e.recipes.create.cutting(inter, inter),
 		e.recipes.create.deploying(inter, [ inter, "#forge:ender_pearls" ]),
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/brass" ]),
 		e.recipes.create.pressing(inter, inter),
 		e.recipes.create.cutting(inter, inter),
-	]).transitionalItem(inter).loops(7)
+	]).transitionalItem(inter).loops(10)
 
 	inter = "kubejs:incomplete_combat_coin"
 	e.recipes.create.sequenced_assembly([
