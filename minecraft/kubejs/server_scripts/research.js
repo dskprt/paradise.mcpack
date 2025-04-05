@@ -18,7 +18,7 @@ ServerEvents.recipes(e => {
 		e.recipes.create.cutting(inter, inter),
 		e.recipes.create.deploying(inter, [ inter, "#forge:gems/lapis" ]),
 		e.recipes.create.pressing(inter, inter),
-	]).transitionalItem(inter).loops(3)
+	]).transitionalItem(inter).loops(4)
 	
 	inter = "kubejs:incomplete_chemical_coin"
 	e.recipes.create.sequenced_assembly([
@@ -55,7 +55,7 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/brass" ]),
 		e.recipes.create.pressing(inter, inter),
 		e.recipes.create.cutting(inter, inter),
-	]).transitionalItem(inter).loops(4)
+	]).transitionalItem(inter).loops(5)
 
 	inter = "kubejs:incomplete_logistics_coin"
 	e.recipes.create.sequenced_assembly([
@@ -68,7 +68,7 @@ ServerEvents.recipes(e => {
 		e.recipes.create.deploying(inter, [ inter, "#forge:plates/brass" ]),
 		e.recipes.create.pressing(inter, inter),
 		e.recipes.create.cutting(inter, inter),
-	]).transitionalItem(inter).loops(5)
+	]).transitionalItem(inter).loops(3)
 
 	inter = "kubejs:incomplete_science_coin"
 	e.recipes.create.sequenced_assembly([
